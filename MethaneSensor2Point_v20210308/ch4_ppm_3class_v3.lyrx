@@ -1,0 +1,751 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "2.7.0",
+  "build" : 26828,
+  "layers" : [
+    "CIMPATH=scene/micro_2019_09_17_f0000.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMFeatureLayer",
+      "name" : "micro_2019_09_17_f0000",
+      "uRI" : "CIMPATH=scene/micro_2019_09_17_f0000.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "metadataURI" : "CIMPATH=Metadata/bcda88192a0c8e0b58a0d460b4b721ec.xml",
+      "useSourceMetadata" : true,
+      "description" : "micro_2019_09_17_f0000",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface"
+      },
+      "expanded" : true,
+      "layer3DProperties" : {
+        "type" : "CIM3DLayerProperties",
+        "castShadows" : true,
+        "isLayerLit" : true,
+        "layerFaceCulling" : "None",
+        "maxDistance" : -1,
+        "minDistance" : -1,
+        "preloadTextureCutoffHigh" : 0,
+        "preloadTextureCutoffLow" : 0.25,
+        "textureCutoffHigh" : 0.25,
+        "textureCutoffLow" : 1,
+        "useCompressedTextures" : true,
+        "verticalExaggeration" : 1,
+        "exaggerationMode" : "ScaleZ",
+        "verticalUnit" : {
+          "uwkid" : 9001
+        },
+        "lighting" : "OneSideDataNormal"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "autoGenerateFeatureTemplates" : true,
+      "featureElevationExpression" : "Shape.Z",
+      "featureTable" : {
+        "type" : "CIMFeatureTable",
+        "displayField" : "Field1",
+        "editable" : true,
+        "dataConnection" : {
+          "type" : "CIMXYEventDataConnection",
+          "xFieldName" : "Longitude_deg",
+          "yFieldName" : "Latitude_deg",
+          "zFieldName" : "Alt_m",
+          "spatialReference" : {
+            "wkid" : 4326,
+            "latestWkid" : 4326
+          },
+          "xYEventTableDataConnection" : {
+            "type" : "CIMStandardDataConnection",
+            "workspaceConnectionString" : "DATABASE=..\\..\\MethaneOnlySensor\\20190917_Methane",
+            "workspaceFactory" : "DelimitedTextFile",
+            "dataset" : "micro_2019_09_17_f0000_format.csv",
+            "datasetType" : "esriDTTable"
+          }
+        },
+        "studyAreaSpatialRel" : "esriSpatialRelUndefined",
+        "searchOrder" : "esriSearchOrderSpatial"
+      },
+      "htmlPopupEnabled" : true,
+      "selectable" : true,
+      "featureCacheType" : "Session",
+      "displayFiltersType" : "ByScale",
+      "featureBlendingMode" : "Alpha",
+      "labelClasses" : [
+        {
+          "type" : "CIMLabelClass",
+          "expression" : "$feature.SysTime",
+          "expressionEngine" : "Arcade",
+          "featuresToLabel" : "AllVisibleFeatures",
+          "maplexLabelPlacementProperties" : {
+            "type" : "CIMMaplexLabelPlacementProperties",
+            "featureType" : "Point",
+            "avoidPolygonHoles" : true,
+            "canOverrunFeature" : true,
+            "canPlaceLabelOutsidePolygon" : true,
+            "canRemoveOverlappingLabel" : true,
+            "canStackLabel" : true,
+            "connectionType" : "Unambiguous",
+            "constrainOffset" : "NoConstraint",
+            "contourAlignmentType" : "Page",
+            "contourLadderType" : "Straight",
+            "contourMaximumAngle" : 90,
+            "enableConnection" : true,
+            "enablePointPlacementPriorities" : true,
+            "featureWeight" : 0,
+            "fontHeightReductionLimit" : 4,
+            "fontHeightReductionStep" : 0.5,
+            "fontWidthReductionLimit" : 90,
+            "fontWidthReductionStep" : 5,
+            "graticuleAlignmentType" : "Straight",
+            "keyNumberGroupName" : "Default",
+            "labelBuffer" : 15,
+            "labelLargestPolygon" : true,
+            "labelPriority" : -1,
+            "labelStackingProperties" : {
+              "type" : "CIMMaplexLabelStackingProperties",
+              "stackAlignment" : "ChooseBest",
+              "maximumNumberOfLines" : 3,
+              "minimumNumberOfCharsPerLine" : 3,
+              "maximumNumberOfCharsPerLine" : 24,
+              "separators" : [
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : " ",
+                  "splitAfter" : true
+                },
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : ",",
+                  "visible" : true,
+                  "splitAfter" : true
+                }
+              ]
+            },
+            "lineFeatureType" : "General",
+            "linePlacementMethod" : "OffsetCurvedFromLine",
+            "maximumLabelOverrun" : 36,
+            "maximumLabelOverrunUnit" : "Point",
+            "minimumFeatureSizeUnit" : "Map",
+            "multiPartOption" : "OneLabelPerPart",
+            "offsetAlongLineProperties" : {
+              "type" : "CIMMaplexOffsetAlongLineProperties",
+              "placementMethod" : "BestPositionAlongLine",
+              "labelAnchorPoint" : "CenterOfLabel",
+              "distanceUnit" : "Percentage",
+              "useLineDirection" : true
+            },
+            "pointExternalZonePriorities" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "polygonAnchorPointType" : "GeometricCenter",
+            "polygonBoundaryWeight" : 0,
+            "polygonExternalZones" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "polygonFeatureType" : "General",
+            "polygonInternalZones" : {
+              "type" : "CIMMaplexInternalZonePriorities",
+              "center" : 1
+            },
+            "polygonPlacementMethod" : "CurvedInPolygon",
+            "primaryOffset" : 1,
+            "primaryOffsetUnit" : "Point",
+            "removeExtraWhiteSpace" : true,
+            "repetitionIntervalUnit" : "Map",
+            "rotationProperties" : {
+              "type" : "CIMMaplexRotationProperties",
+              "rotationType" : "Arithmetic",
+              "alignmentType" : "Straight"
+            },
+            "secondaryOffset" : 100,
+            "strategyPriorities" : {
+              "type" : "CIMMaplexStrategyPriorities",
+              "stacking" : 1,
+              "overrun" : 2,
+              "fontCompression" : 3,
+              "fontReduction" : 4,
+              "abbreviation" : 5
+            },
+            "thinningDistanceUnit" : "Point",
+            "truncationMarkerCharacter" : ".",
+            "truncationMinimumLength" : 1,
+            "truncationPreferredCharacters" : "aeiou",
+            "polygonAnchorPointPerimeterInsetUnit" : "Point"
+          },
+          "name" : "Class 1",
+          "priority" : -1,
+          "standardLabelPlacementProperties" : {
+            "type" : "CIMStandardLabelPlacementProperties",
+            "featureType" : "Line",
+            "featureWeight" : "None",
+            "labelWeight" : "High",
+            "numLabelsOption" : "OneLabelPerName",
+            "lineLabelPosition" : {
+              "type" : "CIMStandardLineLabelPosition",
+              "above" : true,
+              "inLine" : true,
+              "parallel" : true
+            },
+            "lineLabelPriorities" : {
+              "type" : "CIMStandardLineLabelPriorities",
+              "aboveStart" : 3,
+              "aboveAlong" : 3,
+              "aboveEnd" : 3,
+              "centerStart" : 3,
+              "centerAlong" : 3,
+              "centerEnd" : 3,
+              "belowStart" : 3,
+              "belowAlong" : 3,
+              "belowEnd" : 3
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "pointPlacementPriorities" : {
+              "type" : "CIMStandardPointPlacementPriorities",
+              "aboveLeft" : 2,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerLeft" : 3,
+              "centerRight" : 2,
+              "belowLeft" : 3,
+              "belowCenter" : 3,
+              "belowRight" : 2
+            },
+            "rotationType" : "Arithmetic",
+            "polygonPlacementMethod" : "AlwaysHorizontal"
+          },
+          "textSymbol" : {
+            "type" : "CIMSymbolReference",
+            "symbol" : {
+              "type" : "CIMTextSymbol",
+              "blockProgression" : "TTB",
+              "depth3D" : 1,
+              "extrapolateBaselines" : true,
+              "fontEffects" : "Normal",
+              "fontEncoding" : "Unicode",
+              "fontFamilyName" : "Tahoma",
+              "fontStyleName" : "Regular",
+              "fontType" : "Unspecified",
+              "haloSize" : 1,
+              "height" : 10,
+              "hinting" : "Default",
+              "horizontalAlignment" : "Left",
+              "kerning" : true,
+              "letterWidth" : 100,
+              "ligatures" : true,
+              "lineGapType" : "ExtraLeading",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        0,
+                        0,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              },
+              "textCase" : "Normal",
+              "textDirection" : "LTR",
+              "verticalAlignment" : "Bottom",
+              "verticalGlyphOrientation" : "Right",
+              "wordSpacing" : 100,
+              "billboardMode3D" : "FaceNearPlane"
+            }
+          },
+          "useCodedValue" : true,
+          "visibility" : true,
+          "iD" : -1
+        }
+      ],
+      "renderer" : {
+        "type" : "CIMClassBreaksRenderer",
+        "barrierWeight" : "High",
+        "breaks" : [
+          {
+            "type" : "CIMClassBreak",
+            "label" : "\u22641.900000",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPointSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMObjectMarker3D",
+                    "enable" : true,
+                    "name" : "Group 1",
+                    "anchorPoint" : {
+                      "x" : 0,
+                      "y" : 0,
+                      "z" : 0
+                    },
+                    "anchorPointUnits" : "Relative",
+                    "dominantSizeAxis3D" : "Z",
+                    "size" : 5,
+                    "billboardMode3D" : "None",
+                    "modelURI" : "CIMPATH=ObjectMarker3D/62189b31ed988e85408b8ca5fcf5c6c1.dat",
+                    "width" : 5,
+                    "depth" : 5,
+                    "tintColor" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        56,
+                        168,
+                        0,
+                        100
+                      ]
+                    },
+                    "thumbnail" : "data:image/png;base64,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",
+                    "useAnchorPoint" : true
+                  }
+                ],
+                "haloSize" : 2.2154165802786445,
+                "scaleX" : 1,
+                "angleAlignment" : "Display"
+              }
+            },
+            "upperBound" : 1.8999999999999999
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "\u22642.000000",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPointSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMObjectMarker3D",
+                    "enable" : true,
+                    "name" : "Group 2",
+                    "anchorPoint" : {
+                      "x" : 0,
+                      "y" : 0,
+                      "z" : 0
+                    },
+                    "anchorPointUnits" : "Relative",
+                    "dominantSizeAxis3D" : "Z",
+                    "size" : 5,
+                    "billboardMode3D" : "None",
+                    "modelURI" : "CIMPATH=ObjectMarker3D/62189b31ed988e85408b8ca5fcf5c6c1.dat",
+                    "width" : 5,
+                    "depth" : 5,
+                    "tintColor" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        255,
+                        255,
+                        0,
+                        100
+                      ]
+                    },
+                    "thumbnail" : "data:image/png;base64,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",
+                    "useAnchorPoint" : true
+                  }
+                ],
+                "haloSize" : 2.2154165802786445,
+                "scaleX" : 1,
+                "angleAlignment" : "Display"
+              }
+            },
+            "upperBound" : 2
+          },
+          {
+            "type" : "CIMClassBreak",
+            "label" : "\u22642.169350",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMPointSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMObjectMarker3D",
+                    "enable" : true,
+                    "name" : "Group 3",
+                    "anchorPoint" : {
+                      "x" : 0,
+                      "y" : 0,
+                      "z" : 0
+                    },
+                    "anchorPointUnits" : "Relative",
+                    "dominantSizeAxis3D" : "Z",
+                    "size" : 5,
+                    "billboardMode3D" : "None",
+                    "modelURI" : "CIMPATH=ObjectMarker3D/62189b31ed988e85408b8ca5fcf5c6c1.dat",
+                    "width" : 5,
+                    "depth" : 5,
+                    "tintColor" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        255,
+                        0,
+                        0,
+                        100
+                      ]
+                    },
+                    "thumbnail" : "data:image/png;base64,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",
+                    "useAnchorPoint" : true
+                  }
+                ],
+                "haloSize" : 2.2154165802786445,
+                "scaleX" : 1,
+                "angleAlignment" : "Display"
+              }
+            },
+            "upperBound" : 2.1693500000000001
+          }
+        ],
+        "classBreakType" : "GraduatedColor",
+        "classificationMethod" : "Manual",
+        "colorRamp" : {
+          "type" : "CIMFixedColorRamp",
+          "colorSpace" : {
+            "type" : "CIMICCColorSpace",
+            "url" : "Default RGB"
+          },
+          "colors" : [
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                244,
+                213,
+                193,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                210,
+                136,
+                111,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                188,
+                85,
+                57,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                155,
+                57,
+                38,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                122,
+                28,
+                19,
+                100
+              ]
+            }
+          ],
+          "arrangement" : "Default"
+        },
+        "field" : "CH4_ppm",
+        "minimumBreak" : 0.87739299999999998,
+        "numberFormat" : {
+          "type" : "CIMNumericFormat",
+          "alignmentOption" : "esriAlignLeft",
+          "alignmentWidth" : 0,
+          "roundingOption" : "esriRoundNumberOfDecimals",
+          "roundingValue" : 6,
+          "zeroPad" : true
+        },
+        "showInAscendingOrder" : true,
+        "heading" : "CH4_ppm",
+        "sampleSize" : 10000,
+        "defaultSymbolPatch" : "Default",
+        "defaultSymbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPointSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMVectorMarker",
+                "enable" : true,
+                "name" : "Group 4",
+                "anchorPointUnits" : "Relative",
+                "dominantSizeAxis3D" : "Z",
+                "size" : 4,
+                "billboardMode3D" : "FaceNearPlane",
+                "frame" : {
+                  "xmin" : -2,
+                  "ymin" : -2,
+                  "xmax" : 2,
+                  "ymax" : 2
+                },
+                "markerGraphics" : [
+                  {
+                    "type" : "CIMMarkerGraphic",
+                    "geometry" : {
+                      "curveRings" : [
+                        [
+                          [
+                            1.2246467991473532e-16,
+                            2
+                          ],
+                          {
+                            "a" : [
+                              [
+                                1.2246467991473532e-16,
+                                2
+                              ],
+                              [
+                                2.4080735754336047e-15,
+                                0
+                              ],
+                              0,
+                              1
+                            ]
+                          }
+                        ]
+                      ]
+                    },
+                    "symbol" : {
+                      "type" : "CIMPolygonSymbol",
+                      "symbolLayers" : [
+                        {
+                          "type" : "CIMSolidStroke",
+                          "enable" : true,
+                          "capStyle" : "Round",
+                          "joinStyle" : "Round",
+                          "lineStyle3D" : "Strip",
+                          "miterLimit" : 10,
+                          "width" : 0.69999999999999996,
+                          "color" : {
+                            "type" : "CIMRGBColor",
+                            "values" : [
+                              0,
+                              0,
+                              0,
+                              100
+                            ]
+                          }
+                        },
+                        {
+                          "type" : "CIMSolidFill",
+                          "enable" : true,
+                          "color" : {
+                            "type" : "CIMRGBColor",
+                            "values" : [
+                              130,
+                              130,
+                              130,
+                              100
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "respectFrame" : true
+              }
+            ],
+            "haloSize" : 1,
+            "scaleX" : 1,
+            "angleAlignment" : "Display"
+          }
+        },
+        "defaultLabel" : "<out of range>",
+        "polygonSymbolColorTarget" : "Fill",
+        "normalizationType" : "Nothing",
+        "exclusionLabel" : "<excluded>",
+        "exclusionSymbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPointSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMVectorMarker",
+                "enable" : true,
+                "anchorPointUnits" : "Relative",
+                "dominantSizeAxis3D" : "Z",
+                "size" : 4,
+                "billboardMode3D" : "FaceNearPlane",
+                "frame" : {
+                  "xmin" : -2,
+                  "ymin" : -2,
+                  "xmax" : 2,
+                  "ymax" : 2
+                },
+                "markerGraphics" : [
+                  {
+                    "type" : "CIMMarkerGraphic",
+                    "geometry" : {
+                      "curveRings" : [
+                        [
+                          [
+                            1.2246467991473532e-16,
+                            2
+                          ],
+                          {
+                            "a" : [
+                              [
+                                1.2246467991473532e-16,
+                                2
+                              ],
+                              [
+                                2.4080735754336047e-15,
+                                0
+                              ],
+                              0,
+                              1
+                            ]
+                          }
+                        ]
+                      ]
+                    },
+                    "symbol" : {
+                      "type" : "CIMPolygonSymbol",
+                      "symbolLayers" : [
+                        {
+                          "type" : "CIMSolidStroke",
+                          "enable" : true,
+                          "capStyle" : "Round",
+                          "joinStyle" : "Round",
+                          "lineStyle3D" : "Strip",
+                          "miterLimit" : 10,
+                          "width" : 0.69999999999999996,
+                          "color" : {
+                            "type" : "CIMRGBColor",
+                            "values" : [
+                              0,
+                              0,
+                              0,
+                              100
+                            ]
+                          }
+                        },
+                        {
+                          "type" : "CIMSolidFill",
+                          "enable" : true,
+                          "color" : {
+                            "type" : "CIMRGBColor",
+                            "values" : [
+                              255,
+                              0,
+                              0,
+                              100
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "respectFrame" : true
+              }
+            ],
+            "haloSize" : 1,
+            "scaleX" : 1,
+            "angleAlignment" : "Display"
+          }
+        },
+        "useExclusionSymbol" : false,
+        "exclusionSymbolPatch" : "Default"
+      },
+      "scaleSymbols" : true,
+      "snappable" : true,
+      "symbolLayerDrawing" : {
+        "type" : "CIMSymbolLayerDrawing",
+        "symbolLayers" : [
+          {
+            "type" : "CIMSymbolLayerIdentifier",
+            "symbolLayerName" : "Group 3"
+          },
+          {
+            "type" : "CIMSymbolLayerIdentifier",
+            "symbolLayerName" : "Group 2"
+          },
+          {
+            "type" : "CIMSymbolLayerIdentifier",
+            "symbolLayerName" : "Group 1"
+          }
+        ],
+        "useSymbolLayerDrawing" : true
+      }
+    }
+  ],
+  "binaryReferences" : [
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/bcda88192a0c8e0b58a0d460b4b721ec.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20210303</CreaDate><CreaTime>16405600</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>micro_2019_09_17_f0000</resTitle></idCitation><idAbs>micro_2019_09_17_f0000</idAbs><idCredit></idCredit><idPurp></idPurp><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+    },
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=ObjectMarker3D/62189b31ed988e85408b8ca5fcf5c6c1.dat",
+      "data" : "{\"version\":\"1.1\",\"authoringApp\":\"ArcGIS Pro\",\"authoringAppVersion\":\"2.0.0\",\"materialDefinitions\":{\"0\":{\"type\":\"standard\",\"params\":{\"transparency\":0,\"diffuse\":[1,1,1],\"externalColorMixMode\":\"multiply\"}}},\"model\":{\"geometries\":[{\"type\":\"Embedded\",\"transformation\":[1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0],\"params\":{\"topology\":\"PerAttributeArray\",\"material\":\"/materialDefinitions/0\",\"vertexAttributes\":{\"position\":{\"valueType\":\"Float32\",\"valuesPerElement\":3,\"values\":[0.0,0.0,0.5,0.1545085,-0.0,0.4755283,0.1469463,-0.0477458,0.4755283,0.1545085,-0.0,0.4755283,0.2938926,-0.0,0.4045085,0.1469463,-0.0477458,0.4755283,0.1469463,-0.0477458,0.4755283,0.2938926,-0.0,0.4045085,0.2795085,-0.0908178,0.4045085,0.2938926,-0.0,0.4045085,0.4045085,-0.0,0.2938926,0.2795085,-0.0908178,0.4045085,0.2795085,-0.0908178,0.4045085,0.4045085,-0.0,0.2938926,0.3847104,-0.125,0.2938926,0.4045085,-0.0,0.2938926,0.4755283,-0.0,0.1545085,0.3847104,-0.125,0.2938926,0.3847104,-0.125,0.2938926,0.4755283,-0.0,0.1545085,0.4522542,-0.1469463,0.1545085,0.4755283,-0.0,0.1545085,0.5,-0.0,0.0,0.4522542,-0.1469463,0.1545085,0.4522542,-0.1469463,0.1545085,0.5,-0.0,0.0,0.4755283,-0.1545085,0.0,0.5,-0.0,0.0,0.4755283,-0.0,-0.1545085,0.4755283,-0.1545085,0.0,0.4755283,-0.1545085,0.0,0.4755283,-0.0,-0.1545085,0.4522542,-0.1469463,-0.1545085,0.4755283,-0.0,-0.1545085,0.4045085,-0.0,-0.2938926,0.4522542,-0.1469463,-0.1545085,0.4522542,-0.1469463,-0.1545085,0.4045085,-0.0,-0.2938926,0.3847104,-0.125,-0.2938926,0.4045085,-0.0,-0.2938926,0.2938926,-0.0,-0.4045085,0.3847104,-0.125,-0.2938926,0.3847104,-0.125,-0.2938926,0.2938926,-0.0,-0.4045085,0.2795085,-0.0908178,-0.4045085,0.2938926,-0.0,-0.4045085,0.1545085,-0.0,-0.4755283,0.2795085,-0.0908178,-0.4045085,0.2795085,-0.0908178,-0.4045085,0.1545085,-0.0,-0.4755283,0.1469463,-0.0477458,-0.4755283,0.1545085,-0.0,-0.4755283,0.0,0.0,-0.5,0.1469463,-0.0477458,-0.4755283,0.1469463,-0.0477458,-0.4755283,0.0,0.0,-0.5,0.125,-0.0908178,-0.4755283,0.0,0.0,-0.5,0.0908178,-0.125,-0.4755283,0.125,-0.0908178,-0.4755283,0.125,-0.0908178,-0.4755283,0.0908178,-0.125,-0.4755283,0.2377641,-0.1727458,-0.4045085,0.0908178,-0.125,-0.4755283,0.1727458,-0.2377641,-0.4045085,0.2377641,-0.1727458,-0.4045085,0.2377641,-0.1727458,-0.4045085,0.1727458,-0.2377641,-0.4045085,0.3272542,-0.2377641,-0.2938926,0.1727458,-0.2377641,-0.4045085,0.2377641,-0.3272542,-0.2938926,0.3272542,-0.2377641,-0.2938926,0.3272542,-0.2377641,-0.2938926,0.2377641,-0.3272542,-0.2938926,0.3847104,-0.2795085,-0.1545085,0.2377641,-0.3272542,-0.2938926,0.2795085,-0.3847104,-0.1545085,0.3847104,-0.2795085,-0.1545085,0.3847104,-0.2795085,-0.1545085,0.2795085,-0.3847104,-0.1545085,0.4045085,-0.2938926,0.0,0.2795085,-0.3847104,-0.1545085,0.2938926,-0.4045085,0.0,0.4045085,-0.2938926,0.0,0.4045085,-0.2938926,0.0,0.2938926,-0.4045085,0.0,0.3847104,-0.2795085,0.1545085,0.2938926,-0.4045085,0.0,0.2795085,-0.3847104,0.1545085,0.3847104,-0.2795085,0.1545085,0.3847104,-0.2795085,0.1545085,0.2795085,-0.3847104,0.1545085,0.3272542,-0.2377641,0.2938926,0.2795085,-0.3847104,0.1545085,0.2377641,-0.3272542,0.2938926,0.3272542,-0.2377641,0.2938926,0.3272542,-0.2377641,0.2938926,0.2377641,-0.3272542,0.2938926,0.2377641,-0.1727458,0.4045085,0.2377641,-0.3272542,0.2938926,0.1727458,-0.2377641,0.4045085,0.2377641,-0.1727458,0.4045085,0.2377641,-0.1727458,0.4045085,0.1727458,-0.2377641,0.4045085,0.125,-0.0908178,0.4755283,0.1727458,-0.2377641,0.4045085,0.0908178,-0.125,0.4755283,0.125,-0.0908178,0.4755283,0.125,-0.0908178,0.4755283,0.0908178,-0.125,0.4755283,0.0,0.0,0.5,0.0908178,-0.125,0.4755283,0.0477458,-0.1469463,0.4755283,0.0,0.0,0.5,0.0,0.0,0.5,0.0477458,-0.1469463,0.4755283,-0.0,-0.1545085,0.4755283,0.0477458,-0.1469463,0.4755283,0.0908178,-0.2795085,0.4045085,-0.0,-0.1545085,0.4755283,-0.0,-0.1545085,0.4755283,0.0908178,-0.2795085,0.4045085,-0.0,-0.2938926,0.4045085,0.0908178,-0.2795085,0.4045085,0.125,-0.3847104,0.2938926,-0.0,-0.2938926,0.4045085,-0.0,-0.2938926,0.4045085,0.125,-0.3847104,0.2938926,-0.0,-0.4045085,0.2938926,0.125,-0.3847104,0.2938926,0.1469463,-0.4522542,0.1545085,-0.0,-0.4045085,0.2938926,-0.0,-0.4045085,0.2938926,0.1469463,-0.4522542,0.1545085,-0.0,-0.4755283,0.1545085,0.1469463,-0.4522542,0.1545085,0.1545085,-0.4755283,0.0,-0.0,-0.4755283,0.1545085,-0.0,-0.4755283,0.1545085,0.1545085,-0.4755283,0.0,-0.0,-0.5,0.0,0.1545085,-0.4755283,0.0,0.1469463,-0.4522542,-0.1545085,-0.0,-0.5,0.0,-0.0,-0.5,0.0,0.1469463,-0.4522542,-0.1545085,-0.0,-0.4755283,-0.1545085,0.1469463,-0.4522542,-0.1545085,0.125,-0.3847104,-0.2938926,-0.0,-0.4755283,-0.1545085,-0.0,-0.4755283,-0.1545085,0.125,-0.3847104,-0.2938926,-0.0,-0.4045085,-0.2938926,0.125,-0.3847104,-0.2938926,0.0908178,-0.2795085,-0.4045085,-0.0,-0.4045085,-0.2938926,-0.0,-0.4045085,-0.2938926,0.0908178,-0.2795085,-0.4045085,-0.0,-0.2938926,-0.4045085,0.0908178,-0.2795085,-0.4045085,0.0477458,-0.1469463,-0.4755283,-0.0,-0.2938926,-0.4045085,-0.0,-0.2938926,-0.4045085,0.0477458,-0.1469463,-0.4755283,-0.0,-0.1545085,-0.4755283,0.0477458,-0.1469463,-0.4755283,0.0,0.0,-0.5,-0.0,-0.1545085,-0.4755283,-0.0,-0.1545085,-0.4755283,0.0,0.0,-0.5,-0.0477458,-0.1469463,-0.4755283,0.0,0.0,-0.5,-0.0908178,-0.125,-0.4755283,-0.0477458,-0.1469463,-0.4755283,-0.0477458,-0.1469463,-0.4755283,-0.0908178,-0.125,-0.4755283,-0.0908178,-0.2795085,-0.4045085,-0.0908178,-0.125,-0.4755283,-0.1727458,-0.2377641,-0.4045085,-0.0908178,-0.2795085,-0.4045085,-0.0908178,-0.2795085,-0.4045085,-0.1727458,-0.2377641,-0.4045085,-0.125,-0.3847104,-0.2938926,-0.1727458,-0.2377641,-0.4045085,-0.2377641,-0.3272542,-0.2938926,-0.125,-0.3847104,-0.2938926,-0.125,-0.3847104,-0.2938926,-0.2377641,-0.3272542,-0.2938926,-0.1469463,-0.4522542,-0.1545085,-0.2377641,-0.3272542,-0.2938926,-0.2795085,-0.3847104,-0.1545085,-0.1469463,-0.4522542,-0.1545085,-0.1469463,-0.4522542,-0.1545085,-0.2795085,-0.3847104,-0.1545085,-0.1545085,-0.4755283,0.0,-0.2795085,-0.3847104,-0.1545085,-0.2938926,-0.4045085,0.0,-0.1545085,-0.4755283,0.0,-0.1545085,-0.4755283,0.0,-0.2938926,-0.4045085,0.0,-0.1469463,-0.4522542,0.1545085,-0.2938926,-0.4045085,0.0,-0.2795085,-0.3847104,0.1545085,-0.1469463,-0.4522542,0.1545085,-0.1469463,-0.4522542,0.1545085,-0.2795085,-0.3847104,0.1545085,-0.125,-0.3847104,0.2938926,-0.2795085,-0.3847104,0.1545085,-0.2377641,-0.3272542,0.2938926,-0.125,-0.3847104,0.2938926,-0.125,-0.3847104,0.2938926,-0.2377641,-0.3272542,0.2938926,-0.0908178,-0.2795085,0.4045085,-0.2377641,-0.3272542,0.2938926,-0.1727458,-0.2377641,0.4045085,-0.0908178,-0.2795085,0.4045085,-0.0908178,-0.2795085,0.4045085,-0.1727458,-0.2377641,0.4045085,-0.0477458,-0.1469463,0.4755283,-0.1727458,-0.2377641,0.4045085,-0.0908178,-0.125,0.4755283,-0.0477458,-0.1469463,0.4755283,-0.0477458,-0.1469463,0.4755283,-0.0908178,-0.125,0.4755283,0.0,0.0,0.5,-0.0908178,-0.125,0.4755283,-0.125,-0.0908178,0.4755283,0.0,0.0,0.5,0.0,0.0,0.5,-0.125,-0.0908178,0.4755283,-0.1469463,-0.0477458,0.4755283,-0.125,-0.0908178,0.4755283,-0.2377641,-0.1727458,0.4045085,-0.1469463,-0.0477458,0.4755283,-0.1469463,-0.0477458,0.4755283,-0.2377641,-0.1727458,0.4045085,-0.2795085,-0.0908178,0.4045085,-0.2377641,-0.1727458,0.4045085,-0.3272542,-0.2377641,0.2938926,-0.2795085,-0.0908178,0.4045085,-0.2795085,-0.0908178,0.4045085,-0.3272542,-0.2377641,0.2938926,-0.3847104,-0.125,0.2938926,-0.3272542,-0.2377641,0.2938926,-0.3847104,-0.2795085,0.1545085,-0.3847104,-0.125,0.2938926,-0.3847104,-0.125,0.2938926,-0.3847104,-0.2795085,0.1545085,-0.4522542,-0.1469463,0.1545085,-0.3847104,-0.2795085,0.1545085,-0.4045085,-0.2938926,0.0,-0.4522542,-0.1469463,0.1545085,-0.4522542,-0.1469463,0.1545085,-0.4045085,-0.2938926,0.0,-0.4755283,-0.1545085,0.0,-0.4045085,-0.2938926,0.0,-0.3847104,-0.2795085,-0.1545085,-0.4755283,-0.1545085,0.0,-0.4755283,-0.1545085,0.0,-0.3847104,-0.2795085,-0.1545085,-0.4522542,-0.1469463,-0.1545085,-0.3847104,-0.2795085,-0.1545085,-0.3272542,-0.2377641,-0.2938926,-0.4522542,-0.1469463,-0.1545085,-0.4522542,-0.1469463,-0.1545085,-0.3272542,-0.2377641,-0.2938926,-0.3847104,-0.125,-0.2938926,-0.3272542,-0.2377641,-0.2938926,-0.2377641,-0.1727458,-0.4045085,-0.3847104,-0.125,-0.2938926,-0.3847104,-0.125,-0.2938926,-0.2377641,-0.1727458,-0.4045085,-0.2795085,-0.0908178,-0.4045085,-0.2377641,-0.1727458,-0.4045085,-0.125,-0.0908178,-0.4755283,-0.2795085,-0.0908178,-0.4045085,-0.2795085,-0.0908178,-0.4045085,-0.125,-0.0908178,-0.4755283,-0.1469463,-0.0477458,-0.4755283,-0.125,-0.0908178,-0.4755283,0.0,0.0,-0.5,-0.1469463,-0.0477458,-0.4755283,-0.1469463,-0.0477458,-0.4755283,0.0,0.0,-0.5,-0.1545085,0.0,-0.4755283,0.0,0.0,-0.5,-0.1469463,0.0477458,-0.4755283,-0.1545085,0.0,-0.4755283,-0.1545085,0.0,-0.4755283,-0.1469463,0.0477458,-0.4755283,-0.2938926,0.0,-0.4045085,-0.1469463,0.0477458,-0.4755283,-0.2795085,0.0908178,-0.4045085,-0.2938926,0.0,-0.4045085,-0.2938926,0.0,-0.4045085,-0.2795085,0.0908178,-0.4045085,-0.4045085,0.0,-0.2938926,-0.2795085,0.0908178,-0.4045085,-0.3847104,0.125,-0.2938926,-0.4045085,0.0,-0.2938926,-0.4045085,0.0,-0.2938926,-0.3847104,0.125,-0.2938926,-0.4755283,0.0,-0.1545085,-0.3847104,0.125,-0.2938926,-0.4522542,0.1469463,-0.1545085,-0.4755283,0.0,-0.1545085,-0.4755283,0.0,-0.1545085,-0.4522542,0.1469463,-0.1545085,-0.5,0.0,0.0,-0.4522542,0.1469463,-0.1545085,-0.4755283,0.1545085,0.0,-0.5,0.0,0.0,-0.5,0.0,0.0,-0.4755283,0.1545085,0.0,-0.4755283,0.0,0.1545085,-0.4755283,0.1545085,0.0,-0.4522542,0.1469463,0.1545085,-0.4755283,0.0,0.1545085,-0.4755283,0.0,0.1545085,-0.4522542,0.1469463,0.1545085,-0.4045085,0.0,0.2938926,-0.4522542,0.1469463,0.1545085,-0.3847104,0.125,0.2938926,-0.4045085,0.0,0.2938926,-0.4045085,0.0,0.2938926,-0.3847104,0.125,0.2938926,-0.2938926,0.0,0.4045085,-0.3847104,0.125,0.2938926,-0.2795085,0.0908178,0.4045085,-0.2938926,0.0,0.4045085,-0.2938926,0.0,0.4045085,-0.2795085,0.0908178,0.4045085,-0.1545085,0.0,0.4755283,-0.2795085,0.0908178,0.4045085,-0.1469463,0.0477458,0.4755283,-0.1545085,0.0,0.4755283,-0.1545085,0.0,0.4755283,-0.1469463,0.0477458,0.4755283,0.0,0.0,0.5,-0.1469463,0.0477458,0.4755283,-0.125,0.0908178,0.4755283,0.0,0.0,0.5,0.0,0.0,0.5,-0.125,0.0908178,0.4755283,-0.0908178,0.125,0.4755283,-0.125,0.0908178,0.4755283,-0.2377641,0.1727458,0.4045085,-0.0908178,0.125,0.4755283,-0.0908178,0.125,0.4755283,-0.2377641,0.1727458,0.4045085,-0.1727458,0.2377641,0.4045085,-0.2377641,0.1727458,0.4045085,-0.3272542,0.2377641,0.2938926,-0.1727458,0.2377641,0.4045085,-0.1727458,0.2377641,0.4045085,-0.3272542,0.2377641,0.2938926,-0.2377641,0.3272542,0.2938926,-0.3272542,0.2377641,0.2938926,-0.3847104,0.2795085,0.1545085,-0.2377641,0.3272542,0.2938926,-0.2377641,0.3272542,0.2938926,-0.3847104,0.2795085,0.1545085,-0.2795085,0.3847104,0.1545085,-0.3847104,0.2795085,0.1545085,-0.4045085,0.2938926,0.0,-0.2795085,0.3847104,0.1545085,-0.2795085,0.3847104,0.1545085,-0.4045085,0.2938926,0.0,-0.2938926,0.4045085,0.0,-0.4045085,0.2938926,0.0,-0.3847104,0.2795085,-0.1545085,-0.2938926,0.4045085,0.0,-0.2938926,0.4045085,0.0,-0.3847104,0.2795085,-0.1545085,-0.2795085,0.3847104,-0.1545085,-0.3847104,0.2795085,-0.1545085,-0.3272542,0.2377641,-0.2938926,-0.2795085,0.3847104,-0.1545085,-0.2795085,0.3847104,-0.1545085,-0.3272542,0.2377641,-0.2938926,-0.2377641,0.3272542,-0.2938926,-0.3272542,0.2377641,-0.2938926,-0.2377641,0.1727458,-0.4045085,-0.2377641,0.3272542,-0.2938926,-0.2377641,0.3272542,-0.2938926,-0.2377641,0.1727458,-0.4045085,-0.1727458,0.2377641,-0.4045085,-0.2377641,0.1727458,-0.4045085,-0.125,0.0908178,-0.4755283,-0.1727458,0.2377641,-0.4045085,-0.1727458,0.2377641,-0.4045085,-0.125,0.0908178,-0.4755283,-0.0908178,0.125,-0.4755283,-0.125,0.0908178,-0.4755283,0.0,0.0,-0.5,-0.0908178,0.125,-0.4755283,-0.0908178,0.125,-0.4755283,0.0,0.0,-0.5,-0.0477458,0.1469463,-0.4755283,0.0,0.0,-0.5,0.0,0.1545085,-0.4755283,-0.0477458,0.1469463,-0.4755283,-0.0477458,0.1469463,-0.4755283,0.0,0.1545085,-0.4755283,-0.0908178,0.2795085,-0.4045085,0.0,0.1545085,-0.4755283,0.0,0.2938926,-0.4045085,-0.0908178,0.2795085,-0.4045085,-0.0908178,0.2795085,-0.4045085,0.0,0.2938926,-0.4045085,-0.125,0.3847104,-0.2938926,0.0,0.2938926,-0.4045085,0.0,0.4045085,-0.2938926,-0.125,0.3847104,-0.2938926,-0.125,0.3847104,-0.2938926,0.0,0.4045085,-0.2938926,-0.1469463,0.4522542,-0.1545085,0.0,0.4045085,-0.2938926,0.0,0.4755283,-0.1545085,-0.1469463,0.4522542,-0.1545085,-0.1469463,0.4522542,-0.1545085,0.0,0.4755283,-0.1545085,-0.1545085,0.4755283,0.0,0.0,0.4755283,-0.1545085,0.0,0.5,0.0,-0.1545085,0.4755283,0.0,-0.1545085,0.4755283,0.0,0.0,0.5,0.0,-0.1469463,0.4522542,0.1545085,0.0,0.5,0.0,0.0,0.4755283,0.1545085,-0.1469463,0.4522542,0.1545085,-0.1469463,0.4522542,0.1545085,0.0,0.4755283,0.1545085,-0.125,0.3847104,0.2938926,0.0,0.4755283,0.1545085,0.0,0.4045085,0.2938926,-0.125,0.3847104,0.2938926,-0.125,0.3847104,0.2938926,0.0,0.4045085,0.2938926,-0.0908178,0.2795085,0.4045085,0.0,0.4045085,0.2938926,0.0,0.2938926,0.4045085,-0.0908178,0.2795085,0.4045085,-0.0908178,0.2795085,0.4045085,0.0,0.2938926,0.4045085,-0.0477458,0.1469463,0.4755283,0.0,0.2938926,0.4045085,0.0,0.1545085,0.4755283,-0.0477458,0.1469463,0.4755283,-0.0477458,0.1469463,0.4755283,0.0,0.1545085,0.4755283,0.0,0.0,0.5,0.0,0.1545085,0.4755283,0.0477458,0.1469463,0.4755283,0.0,0.0,0.5,0.0,0.0,0.5,0.0477458,0.1469463,0.4755283,0.0908178,0.125,0.4755283,0.0477458,0.1469463,0.4755283,0.0908178,0.2795085,0.4045085,0.0908178,0.125,0.4755283,0.0908178,0.125,0.4755283,0.0908178,0.2795085,0.4045085,0.1727458,0.2377641,0.4045085,0.0908178,0.2795085,0.4045085,0.125,0.3847104,0.2938926,0.1727458,0.2377641,0.4045085,0.1727458,0.2377641,0.4045085,0.125,0.3847104,0.2938926,0.2377641,0.3272542,0.2938926,0.125,0.3847104,0.2938926,0.1469463,0.4522542,0.1545085,0.2377641,0.3272542,0.2938926,0.2377641,0.3272542,0.2938926,0.1469463,0.4522542,0.1545085,0.2795085,0.3847104,0.1545085,0.1469463,0.4522542,0.1545085,0.1545085,0.4755283,0.0,0.2795085,0.3847104,0.1545085,0.2795085,0.3847104,0.1545085,0.1545085,0.4755283,0.0,0.2938926,0.4045085,0.0,0.1545085,0.4755283,0.0,0.1469463,0.4522542,-0.1545085,0.2938926,0.4045085,0.0,0.2938926,0.4045085,0.0,0.1469463,0.4522542,-0.1545085,0.2795085,0.3847104,-0.1545085,0.1469463,0.4522542,-0.1545085,0.125,0.3847104,-0.2938926,0.2795085,0.3847104,-0.1545085,0.2795085,0.3847104,-0.1545085,0.125,0.3847104,-0.2938926,0.2377641,0.3272542,-0.2938926,0.125,0.3847104,-0.2938926,0.0908178,0.2795085,-0.4045085,0.2377641,0.3272542,-0.2938926,0.2377641,0.3272542,-0.2938926,0.0908178,0.2795085,-0.4045085,0.1727458,0.2377641,-0.4045085,0.0908178,0.2795085,-0.4045085,0.0477458,0.1469463,-0.4755283,0.1727458,0.2377641,-0.4045085,0.1727458,0.2377641,-0.4045085,0.0477458,0.1469463,-0.4755283,0.0908178,0.125,-0.4755283,0.0477458,0.1469463,-0.4755283,0.0,0.0,-0.5,0.0908178,0.125,-0.4755283,0.0908178,0.125,-0.4755283,0.0,0.0,-0.5,0.125,0.0908178,-0.4755283,0.0,0.0,-0.5,0.1469463,0.0477458,-0.4755283,0.125,0.0908178,-0.4755283,0.125,0.0908178,-0.4755283,0.1469463,0.0477458,-0.4755283,0.2377641,0.1727458,-0.4045085,0.1469463,0.0477458,-0.4755283,0.2795085,0.0908178,-0.4045085,0.2377641,0.1727458,-0.4045085,0.2377641,0.1727458,-0.4045085,0.2795085,0.0908178,-0.4045085,0.3272542,0.2377641,-0.2938926,0.2795085,0.0908178,-0.4045085,0.3847104,0.125,-0.2938926,0.3272542,0.2377641,-0.2938926,0.3272542,0.2377641,-0.2938926,0.3847104,0.125,-0.2938926,0.3847104,0.2795085,-0.1545085,0.3847104,0.125,-0.2938926,0.4522542,0.1469463,-0.1545085,0.3847104,0.2795085,-0.1545085,0.3847104,0.2795085,-0.1545085,0.4522542,0.1469463,-0.1545085,0.4045085,0.2938926,0.0,0.4522542,0.1469463,-0.1545085,0.4755283,0.1545085,0.0,0.4045085,0.2938926,0.0,0.4045085,0.2938926,0.0,0.4755283,0.1545085,0.0,0.3847104,0.2795085,0.1545085,0.4755283,0.1545085,0.0,0.4522542,0.1469463,0.1545085,0.3847104,0.2795085,0.1545085,0.3847104,0.2795085,0.1545085,0.4522542,0.1469463,0.1545085,0.3272542,0.2377641,0.2938926,0.4522542,0.1469463,0.1545085,0.3847104,0.125,0.2938926,0.3272542,0.2377641,0.2938926,0.3272542,0.2377641,0.2938926,0.3847104,0.125,0.2938926,0.2377641,0.1727458,0.4045085,0.3847104,0.125,0.2938926,0.2795085,0.0908178,0.4045085,0.2377641,0.1727458,0.4045085,0.2377641,0.1727458,0.4045085,0.2795085,0.0908178,0.4045085,0.125,0.0908178,0.4755283,0.2795085,0.0908178,0.4045085,0.1469463,0.0477458,0.4755283,0.125,0.0908178,0.4755283,0.125,0.0908178,0.4755283,0.1469463,0.0477458,0.4755283,0.0,0.0,0.5,0.1469463,0.0477458,0.4755283,0.1545085,0.0,0.4755283,0.0,0.0,0.5,0.0,0.0,0.5,0.1469463,-0.0477458,0.4755283,0.125,-0.0908178,0.4755283,0.1469463,-0.0477458,0.4755283,0.2795085,-0.0908178,0.4045085,0.125,-0.0908178,0.4755283,0.125,-0.0908178,0.4755283,0.2795085,-0.0908178,0.4045085,0.2377641,-0.1727458,0.4045085,0.2795085,-0.0908178,0.4045085,0.3847104,-0.125,0.2938926,0.2377641,-0.1727458,0.4045085,0.2377641,-0.1727458,0.4045085,0.3847104,-0.125,0.2938926,0.3272542,-0.2377641,0.2938926,0.3847104,-0.125,0.2938926,0.4522542,-0.1469463,0.1545085,0.3272542,-0.2377641,0.2938926,0.3272542,-0.2377641,0.2938926,0.4522542,-0.1469463,0.1545085,0.3847104,-0.2795085,0.1545085,0.4522542,-0.1469463,0.1545085,0.4755283,-0.1545085,0.0,0.3847104,-0.2795085,0.1545085,0.3847104,-0.2795085,0.1545085,0.4755283,-0.1545085,0.0,0.4045085,-0.2938926,0.0,0.4755283,-0.1545085,0.0,0.4522542,-0.1469463,-0.1545085,0.4045085,-0.2938926,0.0,0.4045085,-0.2938926,0.0,0.4522542,-0.1469463,-0.1545085,0.3847104,-0.2795085,-0.1545085,0.4522542,-0.1469463,-0.1545085,0.3847104,-0.125,-0.2938926,0.3847104,-0.2795085,-0.1545085,0.3847104,-0.2795085,-0.1545085,0.3847104,-0.125,-0.2938926,0.3272542,-0.2377641,-0.2938926,0.3847104,-0.125,-0.2938926,0.2795085,-0.0908178,-0.4045085,0.3272542,-0.2377641,-0.2938926,0.3272542,-0.2377641,-0.2938926,0.2795085,-0.0908178,-0.4045085,0.2377641,-0.1727458,-0.4045085,0.2795085,-0.0908178,-0.4045085,0.1469463,-0.0477458,-0.4755283,0.2377641,-0.1727458,-0.4045085,0.2377641,-0.1727458,-0.4045085,0.1469463,-0.0477458,-0.4755283,0.125,-0.0908178,-0.4755283,0.0,0.0,-0.5,0.0477458,-0.1469463,-0.4755283,0.0908178,-0.125,-0.4755283,0.0477458,-0.1469463,-0.4755283,0.0908178,-0.2795085,-0.4045085,0.0908178,-0.125,-0.4755283,0.0908178,-0.125,-0.4755283,0.0908178,-0.2795085,-0.4045085,0.1727458,-0.2377641,-0.4045085,0.0908178,-0.2795085,-0.4045085,0.125,-0.3847104,-0.2938926,0.1727458,-0.2377641,-0.4045085,0.1727458,-0.2377641,-0.4045085,0.125,-0.3847104,-0.2938926,0.2377641,-0.3272542,-0.2938926,0.125,-0.3847104,-0.2938926,0.1469463,-0.4522542,-0.1545085,0.2377641,-0.3272542,-0.2938926,0.2377641,-0.3272542,-0.2938926,0.1469463,-0.4522542,-0.1545085,0.2795085,-0.3847104,-0.1545085,0.1469463,-0.4522542,-0.1545085,0.1545085,-0.4755283,0.0,0.2795085,-0.3847104,-0.1545085,0.2795085,-0.3847104,-0.1545085,0.1545085,-0.4755283,0.0,0.2938926,-0.4045085,0.0,0.1545085,-0.4755283,0.0,0.1469463,-0.4522542,0.1545085,0.2938926,-0.4045085,0.0,0.2938926,-0.4045085,0.0,0.1469463,-0.4522542,0.1545085,0.2795085,-0.3847104,0.1545085,0.1469463,-0.4522542,0.1545085,0.125,-0.3847104,0.2938926,0.2795085,-0.3847104,0.1545085,0.2795085,-0.3847104,0.1545085,0.125,-0.3847104,0.2938926,0.2377641,-0.3272542,0.2938926,0.125,-0.3847104,0.2938926,0.0908178,-0.2795085,0.4045085,0.2377641,-0.3272542,0.2938926,0.2377641,-0.3272542,0.2938926,0.0908178,-0.2795085,0.4045085,0.1727458,-0.2377641,0.4045085,0.0908178,-0.2795085,0.4045085,0.0477458,-0.1469463,0.4755283,0.1727458,-0.2377641,0.4045085,0.1727458,-0.2377641,0.4045085,0.0477458,-0.1469463,0.4755283,0.0908178,-0.125,0.4755283,0.0,0.0,0.5,-0.0,-0.1545085,0.4755283,-0.0477458,-0.1469463,0.4755283,-0.0,-0.1545085,0.4755283,-0.0,-0.2938926,0.4045085,-0.0477458,-0.1469463,0.4755283,-0.0477458,-0.1469463,0.4755283,-0.0,-0.2938926,0.4045085,-0.0908178,-0.2795085,0.4045085,-0.0,-0.2938926,0.4045085,-0.0,-0.4045085,0.2938926,-0.0908178,-0.2795085,0.4045085,-0.0908178,-0.2795085,0.4045085,-0.0,-0.4045085,0.2938926,-0.125,-0.3847104,0.2938926,-0.0,-0.4045085,0.2938926,-0.0,-0.4755283,0.1545085,-0.125,-0.3847104,0.2938926,-0.125,-0.3847104,0.2938926,-0.0,-0.4755283,0.1545085,-0.1469463,-0.4522542,0.1545085,-0.0,-0.4755283,0.1545085,-0.0,-0.5,0.0,-0.1469463,-0.4522542,0.1545085,-0.1469463,-0.4522542,0.1545085,-0.0,-0.5,0.0,-0.1545085,-0.4755283,0.0,-0.0,-0.5,0.0,-0.0,-0.4755283,-0.1545085,-0.1545085,-0.4755283,0.0,-0.1545085,-0.4755283,0.0,-0.0,-0.4755283,-0.1545085,-0.1469463,-0.4522542,-0.1545085,-0.0,-0.4755283,-0.1545085,-0.0,-0.4045085,-0.2938926,-0.1469463,-0.4522542,-0.1545085,-0.1469463,-0.4522542,-0.1545085,-0.0,-0.4045085,-0.2938926,-0.125,-0.3847104,-0.2938926,-0.0,-0.4045085,-0.2938926,-0.0,-0.2938926,-0.4045085,-0.125,-0.3847104,-0.2938926,-0.125,-0.3847104,-0.2938926,-0.0,-0.2938926,-0.4045085,-0.0908178,-0.2795085,-0.4045085,-0.0,-0.2938926,-0.4045085,-0.0,-0.1545085,-0.4755283,-0.0908178,-0.2795085,-0.4045085,-0.0908178,-0.2795085,-0.4045085,-0.0,-0.1545085,-0.4755283,-0.0477458,-0.1469463,-0.4755283,0.0,0.0,-0.5,-0.125,-0.0908178,-0.4755283,-0.0908178,-0.125,-0.4755283,-0.125,-0.0908178,-0.4755283,-0.2377641,-0.1727458,-0.4045085,-0.0908178,-0.125,-0.4755283,-0.0908178,-0.125,-0.4755283,-0.2377641,-0.1727458,-0.4045085,-0.1727458,-0.2377641,-0.4045085,-0.2377641,-0.1727458,-0.4045085,-0.3272542,-0.2377641,-0.2938926,-0.1727458,-0.2377641,-0.4045085,-0.1727458,-0.2377641,-0.4045085,-0.3272542,-0.2377641,-0.2938926,-0.2377641,-0.3272542,-0.2938926,-0.3272542,-0.2377641,-0.2938926,-0.3847104,-0.2795085,-0.1545085,-0.2377641,-0.3272542,-0.2938926,-0.2377641,-0.3272542,-0.2938926,-0.3847104,-0.2795085,-0.1545085,-0.2795085,-0.3847104,-0.1545085,-0.3847104,-0.2795085,-0.1545085,-0.4045085,-0.2938926,0.0,-0.2795085,-0.3847104,-0.1545085,-0.2795085,-0.3847104,-0.1545085,-0.4045085,-0.2938926,0.0,-0.2938926,-0.4045085,0.0,-0.4045085,-0.2938926,0.0,-0.3847104,-0.2795085,0.1545085,-0.2938926,-0.4045085,0.0,-0.2938926,-0.4045085,0.0,-0.3847104,-0.2795085,0.1545085,-0.2795085,-0.3847104,0.1545085,-0.3847104,-0.2795085,0.1545085,-0.3272542,-0.2377641,0.2938926,-0.2795085,-0.3847104,0.1545085,-0.2795085,-0.3847104,0.1545085,-0.3272542,-0.2377641,0.2938926,-0.2377641,-0.3272542,0.2938926,-0.3272542,-0.2377641,0.2938926,-0.2377641,-0.1727458,0.4045085,-0.2377641,-0.3272542,0.2938926,-0.2377641,-0.3272542,0.2938926,-0.2377641,-0.1727458,0.4045085,-0.1727458,-0.2377641,0.4045085,-0.2377641,-0.1727458,0.4045085,-0.125,-0.0908178,0.4755283,-0.1727458,-0.2377641,0.4045085,-0.1727458,-0.2377641,0.4045085,-0.125,-0.0908178,0.4755283,-0.0908178,-0.125,0.4755283,0.0,0.0,0.5,-0.1469463,-0.0477458,0.4755283,-0.1545085,0.0,0.4755283,-0.1469463,-0.0477458,0.4755283,-0.2795085,-0.0908178,0.4045085,-0.1545085,0.0,0.4755283,-0.1545085,0.0,0.4755283,-0.2795085,-0.0908178,0.4045085,-0.2938926,0.0,0.4045085,-0.2795085,-0.0908178,0.4045085,-0.3847104,-0.125,0.2938926,-0.2938926,0.0,0.4045085,-0.2938926,0.0,0.4045085,-0.3847104,-0.125,0.2938926,-0.4045085,0.0,0.2938926,-0.3847104,-0.125,0.2938926,-0.4522542,-0.1469463,0.1545085,-0.4045085,0.0,0.2938926,-0.4045085,0.0,0.2938926,-0.4522542,-0.1469463,0.1545085,-0.4755283,0.0,0.1545085,-0.4522542,-0.1469463,0.1545085,-0.4755283,-0.1545085,0.0,-0.4755283,0.0,0.1545085,-0.4755283,0.0,0.1545085,-0.4755283,-0.1545085,0.0,-0.5,0.0,0.0,-0.4755283,-0.1545085,0.0,-0.4522542,-0.1469463,-0.1545085,-0.5,0.0,0.0,-0.5,0.0,0.0,-0.4522542,-0.1469463,-0.1545085,-0.4755283,0.0,-0.1545085,-0.4522542,-0.1469463,-0.1545085,-0.3847104,-0.125,-0.2938926,-0.4755283,0.0,-0.1545085,-0.4755283,0.0,-0.1545085,-0.3847104,-0.125,-0.2938926,-0.4045085,0.0,-0.2938926,-0.3847104,-0.125,-0.2938926,-0.2795085,-0.0908178,-0.4045085,-0.4045085,0.0,-0.2938926,-0.4045085,0.0,-0.2938926,-0.2795085,-0.0908178,-0.4045085,-0.2938926,0.0,-0.4045085,-0.2795085,-0.0908178,-0.4045085,-0.1469463,-0.0477458,-0.4755283,-0.2938926,0.0,-0.4045085,-0.2938926,0.0,-0.4045085,-0.1469463,-0.0477458,-0.4755283,-0.1545085,0.0,-0.4755283,0.0,0.0,-0.5,-0.125,0.0908178,-0.4755283,-0.1469463,0.0477458,-0.4755283,-0.125,0.0908178,-0.4755283,-0.2377641,0.1727458,-0.4045085,-0.1469463,0.0477458,-0.4755283,-0.1469463,0.0477458,-0.4755283,-0.2377641,0.1727458,-0.4045085,-0.2795085,0.0908178,-0.4045085,-0.2377641,0.1727458,-0.4045085,-0.3272542,0.2377641,-0.2938926,-0.2795085,0.0908178,-0.4045085,-0.2795085,0.0908178,-0.4045085,-0.3272542,0.2377641,-0.2938926,-0.3847104,0.125,-0.2938926,-0.3272542,0.2377641,-0.2938926,-0.3847104,0.2795085,-0.1545085,-0.3847104,0.125,-0.2938926,-0.3847104,0.125,-0.2938926,-0.3847104,0.2795085,-0.1545085,-0.4522542,0.1469463,-0.1545085,-0.3847104,0.2795085,-0.1545085,-0.4045085,0.2938926,0.0,-0.4522542,0.1469463,-0.1545085,-0.4522542,0.1469463,-0.1545085,-0.4045085,0.2938926,0.0,-0.4755283,0.1545085,0.0,-0.4045085,0.2938926,0.0,-0.3847104,0.2795085,0.1545085,-0.4755283,0.1545085,0.0,-0.4755283,0.1545085,0.0,-0.3847104,0.2795085,0.1545085,-0.4522542,0.1469463,0.1545085,-0.3847104,0.2795085,0.1545085,-0.3272542,0.2377641,0.2938926,-0.4522542,0.1469463,0.1545085,-0.4522542,0.1469463,0.1545085,-0.3272542,0.2377641,0.2938926,-0.3847104,0.125,0.2938926,-0.3272542,0.2377641,0.2938926,-0.2377641,0.1727458,0.4045085,-0.3847104,0.125,0.2938926,-0.3847104,0.125,0.2938926,-0.2377641,0.1727458,0.4045085,-0.2795085,0.0908178,0.4045085,-0.2377641,0.1727458,0.4045085,-0.125,0.0908178,0.4755283,-0.2795085,0.0908178,0.4045085,-0.2795085,0.0908178,0.4045085,-0.125,0.0908178,0.4755283,-0.1469463,0.0477458,0.4755283,0.0,0.0,0.5,-0.0908178,0.125,0.4755283,-0.0477458,0.1469463,0.4755283,-0.0908178,0.125,0.4755283,-0.1727458,0.2377641,0.4045085,-0.0477458,0.1469463,0.4755283,-0.0477458,0.1469463,0.4755283,-0.1727458,0.2377641,0.4045085,-0.0908178,0.2795085,0.4045085,-0.1727458,0.2377641,0.4045085,-0.2377641,0.3272542,0.2938926,-0.0908178,0.2795085,0.4045085,-0.0908178,0.2795085,0.4045085,-0.2377641,0.3272542,0.2938926,-0.125,0.3847104,0.2938926,-0.2377641,0.3272542,0.2938926,-0.2795085,0.3847104,0.1545085,-0.125,0.3847104,0.2938926,-0.125,0.3847104,0.2938926,-0.2795085,0.3847104,0.1545085,-0.1469463,0.4522542,0.1545085,-0.2795085,0.3847104,0.1545085,-0.2938926,0.4045085,0.0,-0.1469463,0.4522542,0.1545085,-0.1469463,0.4522542,0.1545085,-0.2938926,0.4045085,0.0,-0.1545085,0.4755283,0.0,-0.2938926,0.4045085,0.0,-0.2795085,0.3847104,-0.1545085,-0.1545085,0.4755283,0.0,-0.1545085,0.4755283,0.0,-0.2795085,0.3847104,-0.1545085,-0.1469463,0.4522542,-0.1545085,-0.2795085,0.3847104,-0.1545085,-0.2377641,0.3272542,-0.2938926,-0.1469463,0.4522542,-0.1545085,-0.1469463,0.4522542,-0.1545085,-0.2377641,0.3272542,-0.2938926,-0.125,0.3847104,-0.2938926,-0.2377641,0.3272542,-0.2938926,-0.1727458,0.2377641,-0.4045085,-0.125,0.3847104,-0.2938926,-0.125,0.3847104,-0.2938926,-0.1727458,0.2377641,-0.4045085,-0.0908178,0.2795085,-0.4045085,-0.1727458,0.2377641,-0.4045085,-0.0908178,0.125,-0.4755283,-0.0908178,0.2795085,-0.4045085,-0.0908178,0.2795085,-0.4045085,-0.0908178,0.125,-0.4755283,-0.0477458,0.1469463,-0.4755283,0.0,0.0,-0.5,0.0477458,0.1469463,-0.4755283,0.0,0.1545085,-0.4755283,0.0477458,0.1469463,-0.4755283,0.0908178,0.2795085,-0.4045085,0.0,0.1545085,-0.4755283,0.0,0.1545085,-0.4755283,0.0908178,0.2795085,-0.4045085,0.0,0.2938926,-0.4045085,0.0908178,0.2795085,-0.4045085,0.125,0.3847104,-0.2938926,0.0,0.2938926,-0.4045085,0.0,0.2938926,-0.4045085,0.125,0.3847104,-0.2938926,0.0,0.4045085,-0.2938926,0.125,0.3847104,-0.2938926,0.1469463,0.4522542,-0.1545085,0.0,0.4045085,-0.2938926,0.0,0.4045085,-0.2938926,0.1469463,0.4522542,-0.1545085,0.0,0.4755283,-0.1545085,0.1469463,0.4522542,-0.1545085,0.1545085,0.4755283,0.0,0.0,0.4755283,-0.1545085,0.0,0.4755283,-0.1545085,0.1545085,0.4755283,0.0,0.0,0.5,0.0,0.1545085,0.4755283,0.0,0.1469463,0.4522542,0.1545085,0.0,0.5,0.0,0.0,0.5,0.0,0.1469463,0.4522542,0.1545085,0.0,0.4755283,0.1545085,0.1469463,0.4522542,0.1545085,0.125,0.3847104,0.2938926,0.0,0.4755283,0.1545085,0.0,0.4755283,0.1545085,0.125,0.3847104,0.2938926,0.0,0.4045085,0.2938926,0.125,0.3847104,0.2938926,0.0908178,0.2795085,0.4045085,0.0,0.4045085,0.2938926,0.0,0.4045085,0.2938926,0.0908178,0.2795085,0.4045085,0.0,0.2938926,0.4045085,0.0908178,0.2795085,0.4045085,0.0477458,0.1469463,0.4755283,0.0,0.2938926,0.4045085,0.0,0.2938926,0.4045085,0.0477458,0.1469463,0.4755283,0.0,0.1545085,0.4755283,0.0,0.0,0.5,0.0908178,0.125,0.4755283,0.125,0.0908178,0.4755283,0.0908178,0.125,0.4755283,0.1727458,0.2377641,0.4045085,0.125,0.0908178,0.4755283,0.125,0.0908178,0.4755283,0.1727458,0.2377641,0.4045085,0.2377641,0.1727458,0.4045085,0.1727458,0.2377641,0.4045085,0.2377641,0.3272542,0.2938926,0.2377641,0.1727458,0.4045085,0.2377641,0.1727458,0.4045085,0.2377641,0.3272542,0.2938926,0.3272542,0.2377641,0.2938926,0.2377641,0.3272542,0.2938926,0.2795085,0.3847104,0.1545085,0.3272542,0.2377641,0.2938926,0.3272542,0.2377641,0.2938926,0.2795085,0.3847104,0.1545085,0.3847104,0.2795085,0.1545085,0.2795085,0.3847104,0.1545085,0.2938926,0.4045085,0.0,0.3847104,0.2795085,0.1545085,0.3847104,0.2795085,0.1545085,0.2938926,0.4045085,0.0,0.4045085,0.2938926,0.0,0.2938926,0.4045085,0.0,0.2795085,0.3847104,-0.1545085,0.4045085,0.2938926,0.0,0.4045085,0.2938926,0.0,0.2795085,0.3847104,-0.1545085,0.3847104,0.2795085,-0.1545085,0.2795085,0.3847104,-0.1545085,0.2377641,0.3272542,-0.2938926,0.3847104,0.2795085,-0.1545085,0.3847104,0.2795085,-0.1545085,0.2377641,0.3272542,-0.2938926,0.3272542,0.2377641,-0.2938926,0.2377641,0.3272542,-0.2938926,0.1727458,0.2377641,-0.4045085,0.3272542,0.2377641,-0.2938926,0.3272542,0.2377641,-0.2938926,0.1727458,0.2377641,-0.4045085,0.2377641,0.1727458,-0.4045085,0.1727458,0.2377641,-0.4045085,0.0908178,0.125,-0.4755283,0.2377641,0.1727458,-0.4045085,0.2377641,0.1727458,-0.4045085,0.0908178,0.125,-0.4755283,0.125,0.0908178,-0.4755283,0.0,0.0,-0.5,0.1545085,0.0,-0.4755283,0.1469463,0.0477458,-0.4755283,0.1545085,0.0,-0.4755283,0.2938926,0.0,-0.4045085,0.1469463,0.0477458,-0.4755283,0.1469463,0.0477458,-0.4755283,0.2938926,0.0,-0.4045085,0.2795085,0.0908178,-0.4045085,0.2938926,0.0,-0.4045085,0.4045085,0.0,-0.2938926,0.2795085,0.0908178,-0.4045085,0.2795085,0.0908178,-0.4045085,0.4045085,0.0,-0.2938926,0.3847104,0.125,-0.2938926,0.4045085,0.0,-0.2938926,0.4755283,0.0,-0.1545085,0.3847104,0.125,-0.2938926,0.3847104,0.125,-0.2938926,0.4755283,0.0,-0.1545085,0.4522542,0.1469463,-0.1545085,0.4755283,0.0,-0.1545085,0.5,0.0,0.0,0.4522542,0.1469463,-0.1545085,0.4522542,0.1469463,-0.1545085,0.5,0.0,0.0,0.4755283,0.1545085,0.0,0.5,0.0,0.0,0.4755283,0.0,0.1545085,0.4755283,0.1545085,0.0,0.4755283,0.1545085,0.0,0.4755283,0.0,0.1545085,0.4522542,0.1469463,0.1545085,0.4755283,0.0,0.1545085,0.4045085,0.0,0.2938926,0.4522542,0.1469463,0.1545085,0.4522542,0.1469463,0.1545085,0.4045085,0.0,0.2938926,0.3847104,0.125,0.2938926,0.4045085,0.0,0.2938926,0.2938926,0.0,0.4045085,0.3847104,0.125,0.2938926,0.3847104,0.125,0.2938926,0.2938926,0.0,0.4045085,0.2795085,0.0908178,0.4045085,0.2938926,0.0,0.4045085,0.1545085,0.0,0.4755283,0.2795085,0.0908178,0.4045085,0.2795085,0.0908178,0.4045085,0.1545085,0.0,0.4755283,0.1469463,0.0477458,0.4755283]},\"normal\":{\"valueType\":\"Float32\",\"valuesPerElement\":3,\"values\":[0.0,0.0,1.0,0.309017,-0.0,0.9510565,0.2938926,-0.0954915,0.9510565,0.309017,-0.0,0.9510565,0.5877852,-0.0,0.809017,0.2938926,-0.0954915,0.9510565,0.2938926,-0.0954915,0.9510565,0.5877852,-0.0,0.809017,0.559017,-0.1816356,0.809017,0.5877852,-0.0,0.809017,0.809017,-0.0,0.5877852,0.559017,-0.1816356,0.809017,0.559017,-0.1816356,0.809017,0.809017,-0.0,0.5877852,0.7694209,-0.25,0.5877852,0.809017,-0.0,0.5877852,0.9510565,-0.0,0.309017,0.7694209,-0.25,0.5877852,0.7694209,-0.25,0.5877852,0.9510565,-0.0,0.309017,0.9045085,-0.2938926,0.309017,0.9510565,-0.0,0.309017,1.0,-0.0,0.0,0.9045085,-0.2938926,0.309017,0.9045085,-0.2938926,0.309017,1.0,-0.0,0.0,0.9510565,-0.309017,0.0,1.0,-0.0,0.0,0.9510565,-0.0,-0.309017,0.9510565,-0.309017,0.0,0.9510565,-0.309017,0.0,0.9510565,-0.0,-0.309017,0.9045085,-0.2938926,-0.309017,0.9510565,-0.0,-0.309017,0.809017,-0.0,-0.5877852,0.9045085,-0.2938926,-0.309017,0.9045085,-0.2938926,-0.309017,0.809017,-0.0,-0.5877852,0.7694209,-0.25,-0.5877852,0.809017,-0.0,-0.5877852,0.5877852,-0.0,-0.809017,0.7694209,-0.25,-0.5877852,0.7694209,-0.25,-0.5877852,0.5877852,-0.0,-0.809017,0.559017,-0.1816356,-0.809017,0.5877852,-0.0,-0.809017,0.309017,-0.0,-0.9510565,0.559017,-0.1816356,-0.809017,0.559017,-0.1816356,-0.809017,0.309017,-0.0,-0.9510565,0.2938926,-0.0954915,-0.9510565,0.309017,-0.0,-0.9510565,0.0,0.0,-1.0,0.2938926,-0.0954915,-0.9510565,0.2938926,-0.0954915,-0.9510565,0.0,0.0,-1.0,0.25,-0.1816356,-0.9510565,0.0,0.0,-1.0,0.1816356,-0.25,-0.9510565,0.25,-0.1816356,-0.9510565,0.25,-0.1816356,-0.9510565,0.1816356,-0.25,-0.9510565,0.4755283,-0.3454915,-0.809017,0.1816356,-0.25,-0.9510565,0.3454915,-0.4755283,-0.809017,0.4755283,-0.3454915,-0.809017,0.4755283,-0.3454915,-0.809017,0.3454915,-0.4755283,-0.809017,0.6545085,-0.4755283,-0.5877852,0.3454915,-0.4755283,-0.809017,0.4755283,-0.6545085,-0.5877852,0.6545085,-0.4755283,-0.5877852,0.6545085,-0.4755283,-0.5877852,0.4755283,-0.6545085,-0.5877852,0.7694209,-0.559017,-0.309017,0.4755283,-0.6545085,-0.5877852,0.559017,-0.7694209,-0.309017,0.7694209,-0.559017,-0.309017,0.7694209,-0.559017,-0.309017,0.559017,-0.7694209,-0.309017,0.809017,-0.5877852,0.0,0.559017,-0.7694209,-0.309017,0.5877852,-0.809017,0.0,0.809017,-0.5877852,0.0,0.809017,-0.5877852,0.0,0.5877852,-0.809017,0.0,0.7694209,-0.559017,0.309017,0.5877852,-0.809017,0.0,0.559017,-0.7694209,0.309017,0.7694209,-0.559017,0.309017,0.7694209,-0.559017,0.309017,0.559017,-0.7694209,0.309017,0.6545085,-0.4755283,0.5877852,0.559017,-0.7694209,0.309017,0.4755283,-0.6545085,0.5877852,0.6545085,-0.4755283,0.5877852,0.6545085,-0.4755283,0.5877852,0.4755283,-0.6545085,0.5877852,0.4755283,-0.3454915,0.809017,0.4755283,-0.6545085,0.5877852,0.3454915,-0.4755283,0.809017,0.4755283,-0.3454915,0.809017,0.4755283,-0.3454915,0.809017,0.3454915,-0.4755283,0.809017,0.25,-0.1816356,0.9510565,0.3454915,-0.4755283,0.809017,0.1816356,-0.25,0.9510565,0.25,-0.1816356,0.9510565,0.25,-0.1816356,0.9510565,0.1816356,-0.25,0.9510565,0.0,0.0,1.0,0.1816356,-0.25,0.9510565,0.0954915,-0.2938926,0.9510565,0.0,0.0,1.0,0.0,0.0,1.0,0.0954915,-0.2938926,0.9510565,-0.0,-0.309017,0.9510565,0.0954915,-0.2938926,0.9510565,0.1816356,-0.559017,0.809017,-0.0,-0.309017,0.9510565,-0.0,-0.309017,0.9510565,0.1816356,-0.559017,0.809017,-0.0,-0.5877852,0.809017,0.1816356,-0.559017,0.809017,0.25,-0.7694209,0.5877852,-0.0,-0.5877852,0.809017,-0.0,-0.5877852,0.809017,0.25,-0.7694209,0.5877852,-0.0,-0.809017,0.5877852,0.25,-0.7694209,0.5877852,0.2938926,-0.9045085,0.309017,-0.0,-0.809017,0.5877852,-0.0,-0.809017,0.5877852,0.2938926,-0.9045085,0.309017,-0.0,-0.9510565,0.309017,0.2938926,-0.9045085,0.309017,0.309017,-0.9510565,0.0,-0.0,-0.9510565,0.309017,-0.0,-0.9510565,0.309017,0.309017,-0.9510565,0.0,-0.0,-1.0,0.0,0.309017,-0.9510565,0.0,0.2938926,-0.9045085,-0.309017,-0.0,-1.0,0.0,-0.0,-1.0,0.0,0.2938926,-0.9045085,-0.309017,-0.0,-0.9510565,-0.309017,0.2938926,-0.9045085,-0.309017,0.25,-0.7694209,-0.5877852,-0.0,-0.9510565,-0.309017,-0.0,-0.9510565,-0.309017,0.25,-0.7694209,-0.5877852,-0.0,-0.809017,-0.5877852,0.25,-0.7694209,-0.5877852,0.1816356,-0.559017,-0.809017,-0.0,-0.809017,-0.5877852,-0.0,-0.809017,-0.5877852,0.1816356,-0.559017,-0.809017,-0.0,-0.5877852,-0.809017,0.1816356,-0.559017,-0.809017,0.0954915,-0.2938926,-0.9510565,-0.0,-0.5877852,-0.809017,-0.0,-0.5877852,-0.809017,0.0954915,-0.2938926,-0.9510565,-0.0,-0.309017,-0.9510565,0.0954915,-0.2938926,-0.9510565,0.0,0.0,-1.0,-0.0,-0.309017,-0.9510565,-0.0,-0.309017,-0.9510565,0.0,0.0,-1.0,-0.0954915,-0.2938926,-0.9510565,0.0,0.0,-1.0,-0.1816356,-0.25,-0.9510565,-0.0954915,-0.2938926,-0.9510565,-0.0954915,-0.2938926,-0.9510565,-0.1816356,-0.25,-0.9510565,-0.1816356,-0.559017,-0.809017,-0.1816356,-0.25,-0.9510565,-0.3454915,-0.4755283,-0.809017,-0.1816356,-0.559017,-0.809017,-0.1816356,-0.559017,-0.809017,-0.3454915,-0.4755283,-0.809017,-0.25,-0.7694209,-0.5877852,-0.3454915,-0.4755283,-0.809017,-0.4755283,-0.6545085,-0.5877852,-0.25,-0.7694209,-0.5877852,-0.25,-0.7694209,-0.5877852,-0.4755283,-0.6545085,-0.5877852,-0.2938926,-0.9045085,-0.309017,-0.4755283,-0.6545085,-0.5877852,-0.559017,-0.7694209,-0.309017,-0.2938926,-0.9045085,-0.309017,-0.2938926,-0.9045085,-0.309017,-0.559017,-0.7694209,-0.309017,-0.309017,-0.9510565,0.0,-0.559017,-0.7694209,-0.309017,-0.5877852,-0.809017,0.0,-0.309017,-0.9510565,0.0,-0.309017,-0.9510565,0.0,-0.5877852,-0.809017,0.0,-0.2938926,-0.9045085,0.309017,-0.5877852,-0.809017,0.0,-0.559017,-0.7694209,0.309017,-0.2938926,-0.9045085,0.309017,-0.2938926,-0.9045085,0.309017,-0.559017,-0.7694209,0.309017,-0.25,-0.7694209,0.5877852,-0.559017,-0.7694209,0.309017,-0.4755283,-0.6545085,0.5877852,-0.25,-0.7694209,0.5877852,-0.25,-0.7694209,0.5877852,-0.4755283,-0.6545085,0.5877852,-0.1816356,-0.559017,0.809017,-0.4755283,-0.6545085,0.5877852,-0.3454915,-0.4755283,0.809017,-0.1816356,-0.559017,0.809017,-0.1816356,-0.559017,0.809017,-0.3454915,-0.4755283,0.809017,-0.0954915,-0.2938926,0.9510565,-0.3454915,-0.4755283,0.809017,-0.1816356,-0.25,0.9510565,-0.0954915,-0.2938926,0.9510565,-0.0954915,-0.2938926,0.9510565,-0.1816356,-0.25,0.9510565,0.0,0.0,1.0,-0.1816356,-0.25,0.9510565,-0.25,-0.1816356,0.9510565,0.0,0.0,1.0,0.0,0.0,1.0,-0.25,-0.1816356,0.9510565,-0.2938926,-0.0954915,0.9510565,-0.25,-0.1816356,0.9510565,-0.4755283,-0.3454915,0.809017,-0.2938926,-0.0954915,0.9510565,-0.2938926,-0.0954915,0.9510565,-0.4755283,-0.3454915,0.809017,-0.559017,-0.1816356,0.809017,-0.4755283,-0.3454915,0.809017,-0.6545085,-0.4755283,0.5877852,-0.559017,-0.1816356,0.809017,-0.559017,-0.1816356,0.809017,-0.6545085,-0.4755283,0.5877852,-0.7694209,-0.25,0.5877852,-0.6545085,-0.4755283,0.5877852,-0.7694209,-0.559017,0.309017,-0.7694209,-0.25,0.5877852,-0.7694209,-0.25,0.5877852,-0.7694209,-0.559017,0.309017,-0.9045085,-0.2938926,0.309017,-0.7694209,-0.559017,0.309017,-0.809017,-0.5877852,0.0,-0.9045085,-0.2938926,0.309017,-0.9045085,-0.2938926,0.309017,-0.809017,-0.5877852,0.0,-0.9510565,-0.309017,0.0,-0.809017,-0.5877852,0.0,-0.7694209,-0.559017,-0.309017,-0.9510565,-0.309017,0.0,-0.9510565,-0.309017,0.0,-0.7694209,-0.559017,-0.309017,-0.9045085,-0.2938926,-0.309017,-0.7694209,-0.559017,-0.309017,-0.6545085,-0.4755283,-0.5877852,-0.9045085,-0.2938926,-0.309017,-0.9045085,-0.2938926,-0.309017,-0.6545085,-0.4755283,-0.5877852,-0.7694209,-0.25,-0.5877852,-0.6545085,-0.4755283,-0.5877852,-0.4755283,-0.3454915,-0.809017,-0.7694209,-0.25,-0.5877852,-0.7694209,-0.25,-0.5877852,-0.4755283,-0.3454915,-0.809017,-0.559017,-0.1816356,-0.809017,-0.4755283,-0.3454915,-0.809017,-0.25,-0.1816356,-0.9510565,-0.559017,-0.1816356,-0.809017,-0.559017,-0.1816356,-0.809017,-0.25,-0.1816356,-0.9510565,-0.2938926,-0.0954915,-0.9510565,-0.25,-0.1816356,-0.9510565,0.0,0.0,-1.0,-0.2938926,-0.0954915,-0.9510565,-0.2938926,-0.0954915,-0.9510565,0.0,0.0,-1.0,-0.309017,0.0,-0.9510565,0.0,0.0,-1.0,-0.2938926,0.0954915,-0.9510565,-0.309017,0.0,-0.9510565,-0.309017,0.0,-0.9510565,-0.2938926,0.0954915,-0.9510565,-0.5877852,0.0,-0.809017,-0.2938926,0.0954915,-0.9510565,-0.559017,0.1816356,-0.809017,-0.5877852,0.0,-0.809017,-0.5877852,0.0,-0.809017,-0.559017,0.1816356,-0.809017,-0.809017,0.0,-0.5877852,-0.559017,0.1816356,-0.809017,-0.7694209,0.25,-0.5877852,-0.809017,0.0,-0.5877852,-0.809017,0.0,-0.5877852,-0.7694209,0.25,-0.5877852,-0.9510565,0.0,-0.309017,-0.7694209,0.25,-0.5877852,-0.9045085,0.2938926,-0.309017,-0.9510565,0.0,-0.309017,-0.9510565,0.0,-0.309017,-0.9045085,0.2938926,-0.309017,-1.0,0.0,0.0,-0.9045085,0.2938926,-0.309017,-0.9510565,0.309017,0.0,-1.0,0.0,0.0,-1.0,0.0,0.0,-0.9510565,0.309017,0.0,-0.9510565,0.0,0.309017,-0.9510565,0.309017,0.0,-0.9045085,0.2938926,0.309017,-0.9510565,0.0,0.309017,-0.9510565,0.0,0.309017,-0.9045085,0.2938926,0.309017,-0.809017,0.0,0.5877852,-0.9045085,0.2938926,0.309017,-0.7694209,0.25,0.5877852,-0.809017,0.0,0.5877852,-0.809017,0.0,0.5877852,-0.7694209,0.25,0.5877852,-0.5877852,0.0,0.809017,-0.7694209,0.25,0.5877852,-0.559017,0.1816356,0.809017,-0.5877852,0.0,0.809017,-0.5877852,0.0,0.809017,-0.559017,0.1816356,0.809017,-0.309017,0.0,0.9510565,-0.559017,0.1816356,0.809017,-0.2938926,0.0954915,0.9510565,-0.309017,0.0,0.9510565,-0.309017,0.0,0.9510565,-0.2938926,0.0954915,0.9510565,0.0,0.0,1.0,-0.2938926,0.0954915,0.9510565,-0.25,0.1816356,0.9510565,0.0,0.0,1.0,0.0,0.0,1.0,-0.25,0.1816356,0.9510565,-0.1816356,0.25,0.9510565,-0.25,0.1816356,0.9510565,-0.4755283,0.3454915,0.809017,-0.1816356,0.25,0.9510565,-0.1816356,0.25,0.9510565,-0.4755283,0.3454915,0.809017,-0.3454915,0.4755283,0.809017,-0.4755283,0.3454915,0.809017,-0.6545085,0.4755283,0.5877852,-0.3454915,0.4755283,0.809017,-0.3454915,0.4755283,0.809017,-0.6545085,0.4755283,0.5877852,-0.4755283,0.6545085,0.5877852,-0.6545085,0.4755283,0.5877852,-0.7694209,0.559017,0.309017,-0.4755283,0.6545085,0.5877852,-0.4755283,0.6545085,0.5877852,-0.7694209,0.559017,0.309017,-0.559017,0.7694209,0.309017,-0.7694209,0.559017,0.309017,-0.809017,0.5877852,0.0,-0.559017,0.7694209,0.309017,-0.559017,0.7694209,0.309017,-0.809017,0.5877852,0.0,-0.5877852,0.809017,0.0,-0.809017,0.5877852,0.0,-0.7694209,0.559017,-0.309017,-0.5877852,0.809017,0.0,-0.5877852,0.809017,0.0,-0.7694209,0.559017,-0.309017,-0.559017,0.7694209,-0.309017,-0.7694209,0.559017,-0.309017,-0.6545085,0.4755283,-0.5877852,-0.559017,0.7694209,-0.309017,-0.559017,0.7694209,-0.309017,-0.6545085,0.4755283,-0.5877852,-0.4755283,0.6545085,-0.5877852,-0.6545085,0.4755283,-0.5877852,-0.4755283,0.3454915,-0.809017,-0.4755283,0.6545085,-0.5877852,-0.4755283,0.6545085,-0.5877852,-0.4755283,0.3454915,-0.809017,-0.3454915,0.4755283,-0.809017,-0.4755283,0.3454915,-0.809017,-0.25,0.1816356,-0.9510565,-0.3454915,0.4755283,-0.809017,-0.3454915,0.4755283,-0.809017,-0.25,0.1816356,-0.9510565,-0.1816356,0.25,-0.9510565,-0.25,0.1816356,-0.9510565,0.0,0.0,-1.0,-0.1816356,0.25,-0.9510565,-0.1816356,0.25,-0.9510565,0.0,0.0,-1.0,-0.0954915,0.2938926,-0.9510565,0.0,0.0,-1.0,0.0,0.309017,-0.9510565,-0.0954915,0.2938926,-0.9510565,-0.0954915,0.2938926,-0.9510565,0.0,0.309017,-0.9510565,-0.1816356,0.559017,-0.809017,0.0,0.309017,-0.9510565,0.0,0.5877852,-0.809017,-0.1816356,0.559017,-0.809017,-0.1816356,0.559017,-0.809017,0.0,0.5877852,-0.809017,-0.25,0.7694209,-0.5877852,0.0,0.5877852,-0.809017,0.0,0.809017,-0.5877852,-0.25,0.7694209,-0.5877852,-0.25,0.7694209,-0.5877852,0.0,0.809017,-0.5877852,-0.2938926,0.9045085,-0.309017,0.0,0.809017,-0.5877852,0.0,0.9510565,-0.309017,-0.2938926,0.9045085,-0.309017,-0.2938926,0.9045085,-0.309017,0.0,0.9510565,-0.309017,-0.309017,0.9510565,0.0,0.0,0.9510565,-0.309017,0.0,1.0,0.0,-0.309017,0.9510565,0.0,-0.309017,0.9510565,0.0,0.0,1.0,0.0,-0.2938926,0.9045085,0.309017,0.0,1.0,0.0,0.0,0.9510565,0.309017,-0.2938926,0.9045085,0.309017,-0.2938926,0.9045085,0.309017,0.0,0.9510565,0.309017,-0.25,0.7694209,0.5877852,0.0,0.9510565,0.309017,0.0,0.809017,0.5877852,-0.25,0.7694209,0.5877852,-0.25,0.7694209,0.5877852,0.0,0.809017,0.5877852,-0.1816356,0.559017,0.809017,0.0,0.809017,0.5877852,0.0,0.5877852,0.809017,-0.1816356,0.559017,0.809017,-0.1816356,0.559017,0.809017,0.0,0.5877852,0.809017,-0.0954915,0.2938926,0.9510565,0.0,0.5877852,0.809017,0.0,0.309017,0.9510565,-0.0954915,0.2938926,0.9510565,-0.0954915,0.2938926,0.9510565,0.0,0.309017,0.9510565,0.0,0.0,1.0,0.0,0.309017,0.9510565,0.0954915,0.2938926,0.9510565,0.0,0.0,1.0,0.0,0.0,1.0,0.0954915,0.2938926,0.9510565,0.1816356,0.25,0.9510565,0.0954915,0.2938926,0.9510565,0.1816356,0.559017,0.809017,0.1816356,0.25,0.9510565,0.1816356,0.25,0.9510565,0.1816356,0.559017,0.809017,0.3454915,0.4755283,0.809017,0.1816356,0.559017,0.809017,0.25,0.7694209,0.5877852,0.3454915,0.4755283,0.809017,0.3454915,0.4755283,0.809017,0.25,0.7694209,0.5877852,0.4755283,0.6545085,0.5877852,0.25,0.7694209,0.5877852,0.2938926,0.9045085,0.309017,0.4755283,0.6545085,0.5877852,0.4755283,0.6545085,0.5877852,0.2938926,0.9045085,0.309017,0.559017,0.7694209,0.309017,0.2938926,0.9045085,0.309017,0.309017,0.9510565,0.0,0.559017,0.7694209,0.309017,0.559017,0.7694209,0.309017,0.309017,0.9510565,0.0,0.5877852,0.809017,0.0,0.309017,0.9510565,0.0,0.2938926,0.9045085,-0.309017,0.5877852,0.809017,0.0,0.5877852,0.809017,0.0,0.2938926,0.9045085,-0.309017,0.559017,0.7694209,-0.309017,0.2938926,0.9045085,-0.309017,0.25,0.7694209,-0.5877852,0.559017,0.7694209,-0.309017,0.559017,0.7694209,-0.309017,0.25,0.7694209,-0.5877852,0.4755283,0.6545085,-0.5877852,0.25,0.7694209,-0.5877852,0.1816356,0.559017,-0.809017,0.4755283,0.6545085,-0.5877852,0.4755283,0.6545085,-0.5877852,0.1816356,0.559017,-0.809017,0.3454915,0.4755283,-0.809017,0.1816356,0.559017,-0.809017,0.0954915,0.2938926,-0.9510565,0.3454915,0.4755283,-0.809017,0.3454915,0.4755283,-0.809017,0.0954915,0.2938926,-0.9510565,0.1816356,0.25,-0.9510565,0.0954915,0.2938926,-0.9510565,0.0,0.0,-1.0,0.1816356,0.25,-0.9510565,0.1816356,0.25,-0.9510565,0.0,0.0,-1.0,0.25,0.1816356,-0.9510565,0.0,0.0,-1.0,0.2938926,0.0954915,-0.9510565,0.25,0.1816356,-0.9510565,0.25,0.1816356,-0.9510565,0.2938926,0.0954915,-0.9510565,0.4755283,0.3454915,-0.809017,0.2938926,0.0954915,-0.9510565,0.559017,0.1816356,-0.809017,0.4755283,0.3454915,-0.809017,0.4755283,0.3454915,-0.809017,0.559017,0.1816356,-0.809017,0.6545085,0.4755283,-0.5877852,0.559017,0.1816356,-0.809017,0.7694209,0.25,-0.5877852,0.6545085,0.4755283,-0.5877852,0.6545085,0.4755283,-0.5877852,0.7694209,0.25,-0.5877852,0.7694209,0.559017,-0.309017,0.7694209,0.25,-0.5877852,0.9045085,0.2938926,-0.309017,0.7694209,0.559017,-0.309017,0.7694209,0.559017,-0.309017,0.9045085,0.2938926,-0.309017,0.809017,0.5877852,0.0,0.9045085,0.2938926,-0.309017,0.9510565,0.309017,0.0,0.809017,0.5877852,0.0,0.809017,0.5877852,0.0,0.9510565,0.309017,0.0,0.7694209,0.559017,0.309017,0.9510565,0.309017,0.0,0.9045085,0.2938926,0.309017,0.7694209,0.559017,0.309017,0.7694209,0.559017,0.309017,0.9045085,0.2938926,0.309017,0.6545085,0.4755283,0.5877852,0.9045085,0.2938926,0.309017,0.7694209,0.25,0.5877852,0.6545085,0.4755283,0.5877852,0.6545085,0.4755283,0.5877852,0.7694209,0.25,0.5877852,0.4755283,0.3454915,0.809017,0.7694209,0.25,0.5877852,0.559017,0.1816356,0.809017,0.4755283,0.3454915,0.809017,0.4755283,0.3454915,0.809017,0.559017,0.1816356,0.809017,0.25,0.1816356,0.9510565,0.559017,0.1816356,0.809017,0.2938926,0.0954915,0.9510565,0.25,0.1816356,0.9510565,0.25,0.1816356,0.9510565,0.2938926,0.0954915,0.9510565,0.0,0.0,1.0,0.2938926,0.0954915,0.9510565,0.309017,0.0,0.9510565,0.0,0.0,1.0,0.0,0.0,1.0,0.2938926,-0.0954915,0.9510565,0.25,-0.1816356,0.9510565,0.2938926,-0.0954915,0.9510565,0.559017,-0.1816356,0.809017,0.25,-0.1816356,0.9510565,0.25,-0.1816356,0.9510565,0.559017,-0.1816356,0.809017,0.4755283,-0.3454915,0.809017,0.559017,-0.1816356,0.809017,0.7694209,-0.25,0.5877852,0.4755283,-0.3454915,0.809017,0.4755283,-0.3454915,0.809017,0.7694209,-0.25,0.5877852,0.6545085,-0.4755283,0.5877852,0.7694209,-0.25,0.5877852,0.9045085,-0.2938926,0.309017,0.6545085,-0.4755283,0.5877852,0.6545085,-0.4755283,0.5877852,0.9045085,-0.2938926,0.309017,0.7694209,-0.559017,0.309017,0.9045085,-0.2938926,0.309017,0.9510565,-0.309017,0.0,0.7694209,-0.559017,0.309017,0.7694209,-0.559017,0.309017,0.9510565,-0.309017,0.0,0.809017,-0.5877852,0.0,0.9510565,-0.309017,0.0,0.9045085,-0.2938926,-0.309017,0.809017,-0.5877852,0.0,0.809017,-0.5877852,0.0,0.9045085,-0.2938926,-0.309017,0.7694209,-0.559017,-0.309017,0.9045085,-0.2938926,-0.309017,0.7694209,-0.25,-0.5877852,0.7694209,-0.559017,-0.309017,0.7694209,-0.559017,-0.309017,0.7694209,-0.25,-0.5877852,0.6545085,-0.4755283,-0.5877852,0.7694209,-0.25,-0.5877852,0.559017,-0.1816356,-0.809017,0.6545085,-0.4755283,-0.5877852,0.6545085,-0.4755283,-0.5877852,0.559017,-0.1816356,-0.809017,0.4755283,-0.3454915,-0.809017,0.559017,-0.1816356,-0.809017,0.2938926,-0.0954915,-0.9510565,0.4755283,-0.3454915,-0.809017,0.4755283,-0.3454915,-0.809017,0.2938926,-0.0954915,-0.9510565,0.25,-0.1816356,-0.9510565,0.0,0.0,-1.0,0.0954915,-0.2938926,-0.9510565,0.1816356,-0.25,-0.9510565,0.0954915,-0.2938926,-0.9510565,0.1816356,-0.559017,-0.809017,0.1816356,-0.25,-0.9510565,0.1816356,-0.25,-0.9510565,0.1816356,-0.559017,-0.809017,0.3454915,-0.4755283,-0.809017,0.1816356,-0.559017,-0.809017,0.25,-0.7694209,-0.5877852,0.3454915,-0.4755283,-0.809017,0.3454915,-0.4755283,-0.809017,0.25,-0.7694209,-0.5877852,0.4755283,-0.6545085,-0.5877852,0.25,-0.7694209,-0.5877852,0.2938926,-0.9045085,-0.309017,0.4755283,-0.6545085,-0.5877852,0.4755283,-0.6545085,-0.5877852,0.2938926,-0.9045085,-0.309017,0.559017,-0.7694209,-0.309017,0.2938926,-0.9045085,-0.309017,0.309017,-0.9510565,0.0,0.559017,-0.7694209,-0.309017,0.559017,-0.7694209,-0.309017,0.309017,-0.9510565,0.0,0.5877852,-0.809017,0.0,0.309017,-0.9510565,0.0,0.2938926,-0.9045085,0.309017,0.5877852,-0.809017,0.0,0.5877852,-0.809017,0.0,0.2938926,-0.9045085,0.309017,0.559017,-0.7694209,0.309017,0.2938926,-0.9045085,0.309017,0.25,-0.7694209,0.5877852,0.559017,-0.7694209,0.309017,0.559017,-0.7694209,0.309017,0.25,-0.7694209,0.5877852,0.4755283,-0.6545085,0.5877852,0.25,-0.7694209,0.5877852,0.1816356,-0.559017,0.809017,0.4755283,-0.6545085,0.5877852,0.4755283,-0.6545085,0.5877852,0.1816356,-0.559017,0.809017,0.3454915,-0.4755283,0.809017,0.1816356,-0.559017,0.809017,0.0954915,-0.2938926,0.9510565,0.3454915,-0.4755283,0.809017,0.3454915,-0.4755283,0.809017,0.0954915,-0.2938926,0.9510565,0.1816356,-0.25,0.9510565,0.0,0.0,1.0,-0.0,-0.309017,0.9510565,-0.0954915,-0.2938926,0.9510565,-0.0,-0.309017,0.9510565,-0.0,-0.5877852,0.809017,-0.0954915,-0.2938926,0.9510565,-0.0954915,-0.2938926,0.9510565,-0.0,-0.5877852,0.809017,-0.1816356,-0.559017,0.809017,-0.0,-0.5877852,0.809017,-0.0,-0.809017,0.5877852,-0.1816356,-0.559017,0.809017,-0.1816356,-0.559017,0.809017,-0.0,-0.809017,0.5877852,-0.25,-0.7694209,0.5877852,-0.0,-0.809017,0.5877852,-0.0,-0.9510565,0.309017,-0.25,-0.7694209,0.5877852,-0.25,-0.7694209,0.5877852,-0.0,-0.9510565,0.309017,-0.2938926,-0.9045085,0.309017,-0.0,-0.9510565,0.309017,-0.0,-1.0,0.0,-0.2938926,-0.9045085,0.309017,-0.2938926,-0.9045085,0.309017,-0.0,-1.0,0.0,-0.309017,-0.9510565,0.0,-0.0,-1.0,0.0,-0.0,-0.9510565,-0.309017,-0.309017,-0.9510565,0.0,-0.309017,-0.9510565,0.0,-0.0,-0.9510565,-0.309017,-0.2938926,-0.9045085,-0.309017,-0.0,-0.9510565,-0.309017,-0.0,-0.809017,-0.5877852,-0.2938926,-0.9045085,-0.309017,-0.2938926,-0.9045085,-0.309017,-0.0,-0.809017,-0.5877852,-0.25,-0.7694209,-0.5877852,-0.0,-0.809017,-0.5877852,-0.0,-0.5877852,-0.809017,-0.25,-0.7694209,-0.5877852,-0.25,-0.7694209,-0.5877852,-0.0,-0.5877852,-0.809017,-0.1816356,-0.559017,-0.809017,-0.0,-0.5877852,-0.809017,-0.0,-0.309017,-0.9510565,-0.1816356,-0.559017,-0.809017,-0.1816356,-0.559017,-0.809017,-0.0,-0.309017,-0.9510565,-0.0954915,-0.2938926,-0.9510565,0.0,0.0,-1.0,-0.25,-0.1816356,-0.9510565,-0.1816356,-0.25,-0.9510565,-0.25,-0.1816356,-0.9510565,-0.4755283,-0.3454915,-0.809017,-0.1816356,-0.25,-0.9510565,-0.1816356,-0.25,-0.9510565,-0.4755283,-0.3454915,-0.809017,-0.3454915,-0.4755283,-0.809017,-0.4755283,-0.3454915,-0.809017,-0.6545085,-0.4755283,-0.5877852,-0.3454915,-0.4755283,-0.809017,-0.3454915,-0.4755283,-0.809017,-0.6545085,-0.4755283,-0.5877852,-0.4755283,-0.6545085,-0.5877852,-0.6545085,-0.4755283,-0.5877852,-0.7694209,-0.559017,-0.309017,-0.4755283,-0.6545085,-0.5877852,-0.4755283,-0.6545085,-0.5877852,-0.7694209,-0.559017,-0.309017,-0.559017,-0.7694209,-0.309017,-0.7694209,-0.559017,-0.309017,-0.809017,-0.5877852,0.0,-0.559017,-0.7694209,-0.309017,-0.559017,-0.7694209,-0.309017,-0.809017,-0.5877852,0.0,-0.5877852,-0.809017,0.0,-0.809017,-0.5877852,0.0,-0.7694209,-0.559017,0.309017,-0.5877852,-0.809017,0.0,-0.5877852,-0.809017,0.0,-0.7694209,-0.559017,0.309017,-0.559017,-0.7694209,0.309017,-0.7694209,-0.559017,0.309017,-0.6545085,-0.4755283,0.5877852,-0.559017,-0.7694209,0.309017,-0.559017,-0.7694209,0.309017,-0.6545085,-0.4755283,0.5877852,-0.4755283,-0.6545085,0.5877852,-0.6545085,-0.4755283,0.5877852,-0.4755283,-0.3454915,0.809017,-0.4755283,-0.6545085,0.5877852,-0.4755283,-0.6545085,0.5877852,-0.4755283,-0.3454915,0.809017,-0.3454915,-0.4755283,0.809017,-0.4755283,-0.3454915,0.809017,-0.25,-0.1816356,0.9510565,-0.3454915,-0.4755283,0.809017,-0.3454915,-0.4755283,0.809017,-0.25,-0.1816356,0.9510565,-0.1816356,-0.25,0.9510565,0.0,0.0,1.0,-0.2938926,-0.0954915,0.9510565,-0.309017,0.0,0.9510565,-0.2938926,-0.0954915,0.9510565,-0.559017,-0.1816356,0.809017,-0.309017,0.0,0.9510565,-0.309017,0.0,0.9510565,-0.559017,-0.1816356,0.809017,-0.5877852,0.0,0.809017,-0.559017,-0.1816356,0.809017,-0.7694209,-0.25,0.5877852,-0.5877852,0.0,0.809017,-0.5877852,0.0,0.809017,-0.7694209,-0.25,0.5877852,-0.809017,0.0,0.5877852,-0.7694209,-0.25,0.5877852,-0.9045085,-0.2938926,0.309017,-0.809017,0.0,0.5877852,-0.809017,0.0,0.5877852,-0.9045085,-0.2938926,0.309017,-0.9510565,0.0,0.309017,-0.9045085,-0.2938926,0.309017,-0.9510565,-0.309017,0.0,-0.9510565,0.0,0.309017,-0.9510565,0.0,0.309017,-0.9510565,-0.309017,0.0,-1.0,0.0,0.0,-0.9510565,-0.309017,0.0,-0.9045085,-0.2938926,-0.309017,-1.0,0.0,0.0,-1.0,0.0,0.0,-0.9045085,-0.2938926,-0.309017,-0.9510565,0.0,-0.309017,-0.9045085,-0.2938926,-0.309017,-0.7694209,-0.25,-0.5877852,-0.9510565,0.0,-0.309017,-0.9510565,0.0,-0.309017,-0.7694209,-0.25,-0.5877852,-0.809017,0.0,-0.5877852,-0.7694209,-0.25,-0.5877852,-0.559017,-0.1816356,-0.809017,-0.809017,0.0,-0.5877852,-0.809017,0.0,-0.5877852,-0.559017,-0.1816356,-0.809017,-0.5877852,0.0,-0.809017,-0.559017,-0.1816356,-0.809017,-0.2938926,-0.0954915,-0.9510565,-0.5877852,0.0,-0.809017,-0.5877852,0.0,-0.809017,-0.2938926,-0.0954915,-0.9510565,-0.309017,0.0,-0.9510565,0.0,0.0,-1.0,-0.25,0.1816356,-0.9510565,-0.2938926,0.0954915,-0.9510565,-0.25,0.1816356,-0.9510565,-0.4755283,0.3454915,-0.809017,-0.2938926,0.0954915,-0.9510565,-0.2938926,0.0954915,-0.9510565,-0.4755283,0.3454915,-0.809017,-0.559017,0.1816356,-0.809017,-0.4755283,0.3454915,-0.809017,-0.6545085,0.4755283,-0.5877852,-0.559017,0.1816356,-0.809017,-0.559017,0.1816356,-0.809017,-0.6545085,0.4755283,-0.5877852,-0.7694209,0.25,-0.5877852,-0.6545085,0.4755283,-0.5877852,-0.7694209,0.559017,-0.309017,-0.7694209,0.25,-0.5877852,-0.7694209,0.25,-0.5877852,-0.7694209,0.559017,-0.309017,-0.9045085,0.2938926,-0.309017,-0.7694209,0.559017,-0.309017,-0.809017,0.5877852,0.0,-0.9045085,0.2938926,-0.309017,-0.9045085,0.2938926,-0.309017,-0.809017,0.5877852,0.0,-0.9510565,0.309017,0.0,-0.809017,0.5877852,0.0,-0.7694209,0.559017,0.309017,-0.9510565,0.309017,0.0,-0.9510565,0.309017,0.0,-0.7694209,0.559017,0.309017,-0.9045085,0.2938926,0.309017,-0.7694209,0.559017,0.309017,-0.6545085,0.4755283,0.5877852,-0.9045085,0.2938926,0.309017,-0.9045085,0.2938926,0.309017,-0.6545085,0.4755283,0.5877852,-0.7694209,0.25,0.5877852,-0.6545085,0.4755283,0.5877852,-0.4755283,0.3454915,0.809017,-0.7694209,0.25,0.5877852,-0.7694209,0.25,0.5877852,-0.4755283,0.3454915,0.809017,-0.559017,0.1816356,0.809017,-0.4755283,0.3454915,0.809017,-0.25,0.1816356,0.9510565,-0.559017,0.1816356,0.809017,-0.559017,0.1816356,0.809017,-0.25,0.1816356,0.9510565,-0.2938926,0.0954915,0.9510565,0.0,0.0,1.0,-0.1816356,0.25,0.9510565,-0.0954915,0.2938926,0.9510565,-0.1816356,0.25,0.9510565,-0.3454915,0.4755283,0.809017,-0.0954915,0.2938926,0.9510565,-0.0954915,0.2938926,0.9510565,-0.3454915,0.4755283,0.809017,-0.1816356,0.559017,0.809017,-0.3454915,0.4755283,0.809017,-0.4755283,0.6545085,0.5877852,-0.1816356,0.559017,0.809017,-0.1816356,0.559017,0.809017,-0.4755283,0.6545085,0.5877852,-0.25,0.7694209,0.5877852,-0.4755283,0.6545085,0.5877852,-0.559017,0.7694209,0.309017,-0.25,0.7694209,0.5877852,-0.25,0.7694209,0.5877852,-0.559017,0.7694209,0.309017,-0.2938926,0.9045085,0.309017,-0.559017,0.7694209,0.309017,-0.5877852,0.809017,0.0,-0.2938926,0.9045085,0.309017,-0.2938926,0.9045085,0.309017,-0.5877852,0.809017,0.0,-0.309017,0.9510565,0.0,-0.5877852,0.809017,0.0,-0.559017,0.7694209,-0.309017,-0.309017,0.9510565,0.0,-0.309017,0.9510565,0.0,-0.559017,0.7694209,-0.309017,-0.2938926,0.9045085,-0.309017,-0.559017,0.7694209,-0.309017,-0.4755283,0.6545085,-0.5877852,-0.2938926,0.9045085,-0.309017,-0.2938926,0.9045085,-0.309017,-0.4755283,0.6545085,-0.5877852,-0.25,0.7694209,-0.5877852,-0.4755283,0.6545085,-0.5877852,-0.3454915,0.4755283,-0.809017,-0.25,0.7694209,-0.5877852,-0.25,0.7694209,-0.5877852,-0.3454915,0.4755283,-0.809017,-0.1816356,0.559017,-0.809017,-0.3454915,0.4755283,-0.809017,-0.1816356,0.25,-0.9510565,-0.1816356,0.559017,-0.809017,-0.1816356,0.559017,-0.809017,-0.1816356,0.25,-0.9510565,-0.0954915,0.2938926,-0.9510565,0.0,0.0,-1.0,0.0954915,0.2938926,-0.9510565,0.0,0.309017,-0.9510565,0.0954915,0.2938926,-0.9510565,0.1816356,0.559017,-0.809017,0.0,0.309017,-0.9510565,0.0,0.309017,-0.9510565,0.1816356,0.559017,-0.809017,0.0,0.5877852,-0.809017,0.1816356,0.559017,-0.809017,0.25,0.7694209,-0.5877852,0.0,0.5877852,-0.809017,0.0,0.5877852,-0.809017,0.25,0.7694209,-0.5877852,0.0,0.809017,-0.5877852,0.25,0.7694209,-0.5877852,0.2938926,0.9045085,-0.309017,0.0,0.809017,-0.5877852,0.0,0.809017,-0.5877852,0.2938926,0.9045085,-0.309017,0.0,0.9510565,-0.309017,0.2938926,0.9045085,-0.309017,0.309017,0.9510565,0.0,0.0,0.9510565,-0.309017,0.0,0.9510565,-0.309017,0.309017,0.9510565,0.0,0.0,1.0,0.0,0.309017,0.9510565,0.0,0.2938926,0.9045085,0.309017,0.0,1.0,0.0,0.0,1.0,0.0,0.2938926,0.9045085,0.309017,0.0,0.9510565,0.309017,0.2938926,0.9045085,0.309017,0.25,0.7694209,0.5877852,0.0,0.9510565,0.309017,0.0,0.9510565,0.309017,0.25,0.7694209,0.5877852,0.0,0.809017,0.5877852,0.25,0.7694209,0.5877852,0.1816356,0.559017,0.809017,0.0,0.809017,0.5877852,0.0,0.809017,0.5877852,0.1816356,0.559017,0.809017,0.0,0.5877852,0.809017,0.1816356,0.559017,0.809017,0.0954915,0.2938926,0.9510565,0.0,0.5877852,0.809017,0.0,0.5877852,0.809017,0.0954915,0.2938926,0.9510565,0.0,0.309017,0.9510565,0.0,0.0,1.0,0.1816356,0.25,0.9510565,0.25,0.1816356,0.9510565,0.1816356,0.25,0.9510565,0.3454915,0.4755283,0.809017,0.25,0.1816356,0.9510565,0.25,0.1816356,0.9510565,0.3454915,0.4755283,0.809017,0.4755283,0.3454915,0.809017,0.3454915,0.4755283,0.809017,0.4755283,0.6545085,0.5877852,0.4755283,0.3454915,0.809017,0.4755283,0.3454915,0.809017,0.4755283,0.6545085,0.5877852,0.6545085,0.4755283,0.5877852,0.4755283,0.6545085,0.5877852,0.559017,0.7694209,0.309017,0.6545085,0.4755283,0.5877852,0.6545085,0.4755283,0.5877852,0.559017,0.7694209,0.309017,0.7694209,0.559017,0.309017,0.559017,0.7694209,0.309017,0.5877852,0.809017,0.0,0.7694209,0.559017,0.309017,0.7694209,0.559017,0.309017,0.5877852,0.809017,0.0,0.809017,0.5877852,0.0,0.5877852,0.809017,0.0,0.559017,0.7694209,-0.309017,0.809017,0.5877852,0.0,0.809017,0.5877852,0.0,0.559017,0.7694209,-0.309017,0.7694209,0.559017,-0.309017,0.559017,0.7694209,-0.309017,0.4755283,0.6545085,-0.5877852,0.7694209,0.559017,-0.309017,0.7694209,0.559017,-0.309017,0.4755283,0.6545085,-0.5877852,0.6545085,0.4755283,-0.5877852,0.4755283,0.6545085,-0.5877852,0.3454915,0.4755283,-0.809017,0.6545085,0.4755283,-0.5877852,0.6545085,0.4755283,-0.5877852,0.3454915,0.4755283,-0.809017,0.4755283,0.3454915,-0.809017,0.3454915,0.4755283,-0.809017,0.1816356,0.25,-0.9510565,0.4755283,0.3454915,-0.809017,0.4755283,0.3454915,-0.809017,0.1816356,0.25,-0.9510565,0.25,0.1816356,-0.9510565,0.0,0.0,-1.0,0.309017,0.0,-0.9510565,0.2938926,0.0954915,-0.9510565,0.309017,0.0,-0.9510565,0.5877852,0.0,-0.809017,0.2938926,0.0954915,-0.9510565,0.2938926,0.0954915,-0.9510565,0.5877852,0.0,-0.809017,0.559017,0.1816356,-0.809017,0.5877852,0.0,-0.809017,0.809017,0.0,-0.5877852,0.559017,0.1816356,-0.809017,0.559017,0.1816356,-0.809017,0.809017,0.0,-0.5877852,0.7694209,0.25,-0.5877852,0.809017,0.0,-0.5877852,0.9510565,0.0,-0.309017,0.7694209,0.25,-0.5877852,0.7694209,0.25,-0.5877852,0.9510565,0.0,-0.309017,0.9045085,0.2938926,-0.309017,0.9510565,0.0,-0.309017,1.0,0.0,0.0,0.9045085,0.2938926,-0.309017,0.9045085,0.2938926,-0.309017,1.0,0.0,0.0,0.9510565,0.309017,0.0,1.0,0.0,0.0,0.9510565,0.0,0.309017,0.9510565,0.309017,0.0,0.9510565,0.309017,0.0,0.9510565,0.0,0.309017,0.9045085,0.2938926,0.309017,0.9510565,0.0,0.309017,0.809017,0.0,0.5877852,0.9045085,0.2938926,0.309017,0.9045085,0.2938926,0.309017,0.809017,0.0,0.5877852,0.7694209,0.25,0.5877852,0.809017,0.0,0.5877852,0.5877852,0.0,0.809017,0.7694209,0.25,0.5877852,0.7694209,0.25,0.5877852,0.5877852,0.0,0.809017,0.559017,0.1816356,0.809017,0.5877852,0.0,0.809017,0.309017,0.0,0.9510565,0.559017,0.1816356,0.809017,0.559017,0.1816356,0.809017,0.309017,0.0,0.9510565,0.2938926,0.0954915,0.9510565]}}}}],\"name\":\"ModelFromPro\",\"mbb\":[-0.5,-0.5,-0.5,0.5,0.5,0.5],\"pivotOffset\":[0,0,0]}}"
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2-1 noBPC",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2"
+}
